@@ -62,13 +62,9 @@ Khi tiến hành Footprinting, một Hacker cần phải tìm kiếm chính xác
 
 | Nhóm thông tin | Nội dung chi tiết cần thu thập |
 | --- | --- |
-| **Thông tin mạng (Network)** | Dải địa chỉ IP (IP Range), Tên miền (Domain name), Bản ghi DNS, Sơ đồ định tuyến mạng.
-
- |
+| **Thông tin mạng (Network)** | Dải địa chỉ IP (IP Range), Tên miền (Domain name), Bản ghi DNS, Sơ đồ định tuyến mạng. |
 | **Thông tin hệ thống (System)** | Tên hệ điều hành (Windows, Linux), Các cổng đang mở (Open Ports), Các dịch vụ đang chạy và phiên bản của chúng. |
-| **Thông tin tổ chức (Organization)** | Địa chỉ trụ sở, số điện thoại, cơ cấu phòng ban, danh sách email nhân viên, các tài liệu nội bộ vô tình bị rò rỉ trên mạng.
-
- |
+| **Thông tin tổ chức (Organization)** | Địa chỉ trụ sở, số điện thoại, cơ cấu phòng ban, danh sách email nhân viên, các tài liệu nội bộ vô tình bị rò rỉ trên mạng. |
 
 ---
 
