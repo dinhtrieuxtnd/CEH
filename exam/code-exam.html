@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề Thi Cuối Khóa CEH</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --correct-color: #2ecc71;
+            --wrong-color: #e74c3c;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        .header-info {
+            text-align: center;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+        }
+
+        .question-card {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .question-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .options-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .options-list li {
+            margin-bottom: 10px;
+        }
+
+        .options-list label {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .options-list label:hover {
+            background: #e9f2f9;
+        }
+
+        input[type="radio"] {
+            margin-right: 15px;
+            transform: scale(1.2);
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: var(--accent-color);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #2980b9;
+        }
+
+        #result-container {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background: #eef2f5;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .result-score {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .result-feedback {
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Classes for showing correct/wrong after submit */
+        .correct-answer {
+            background-color: #d5f5e3 !important;
+            border-color: var(--correct-color) !important;
+        }
+        .wrong-answer {
+            background-color: #fadbd8 !important;
+            border-color: var(--wrong-color) !important;
+        }
+        .explanation {
+            margin-top: 15px;
+            padding: 10px;
+            background: #fdfefe;
+            border-left: 4px solid #f1c40f;
+            font-size: 0.9em;
+            display: none; /* Hidden until submit */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>ĐỀ THI CUỐI KHÓA CEH</h1>
+    <div class="header-info">
+        Thời gian: 60 phút | Tổng số câu: 50 câu <br>
+    </div>
+
+    <form id="quiz-form">
+        <div id="quiz-content">
+            </div>
+        <button type="button" class="submit-btn" onclick="submitQuiz()">Nộp Bài & Xem Điểm</button>
+    </form>
+
+    <div id="result-container">
+        <div class="result-score" id="score-display"></div>
+        <div class="result-feedback" id="feedback-display"></div>
+    </div>
+</div>
+
+<script type="module">
+    import {quizData} from './de_01.js';
+
+    const quizContent = document.getElementById('quiz-content');
+    
+    // Hàm render câu hỏi ra HTML
+    function renderQuiz() {
+        quizData.forEach((q, qIndex) => {
+            const questionCard = document.createElement('div');
+            questionCard.className = 'question-card';
+            questionCard.id = `q-card-${qIndex}`;
+
+            let optionsHtml = '';
+            q.options.forEach((opt, optIndex) => {
+                optionsHtml += `
+                    <li>
+                        <label id="label-${qIndex}-${optIndex}">
+                            <input type="radio" name="question-${qIndex}" value="${optIndex}">
+                            ${opt}
+                        </label>
+                    </li>
+                `;
+            });
+
+            questionCard.innerHTML = `
+                <div class="question-title">${q.question} <span style="color:#7f8c8d; font-size:0.8em; font-weight:normal;">(${q.points} điểm)</span></div>
+                <ul class="options-list">
+                    ${optionsHtml}
+                </ul>
+                <div class="explanation" id="expl-${qIndex}">
+                    <strong>Giải thích:</strong> ${q.explanation}
+                </div>
+            `;
+            quizContent.appendChild(questionCard);
+        });
+    }
+
+    // Hàm xử lý nộp bài và tính điểm
+    function submitQuiz() {
+        let totalScore = 0;
+        let maxScore = 0; // Tính tổng điểm tối đa của đề thi hiện tại
+
+        quizData.forEach((q, qIndex) => {
+            maxScore += q.points;
+            
+            // Lấy đáp án user chọn
+            const selectedOption = document.querySelector(`input[name="question-${qIndex}"]:checked`);
+            
+            // Hiển thị phần giải thích
+            document.getElementById(`expl-${qIndex}`).style.display = 'block';
+
+            if (selectedOption) {
+                const userAns = parseInt(selectedOption.value);
+                
+                // Đánh dấu đúng/sai giao diện
+                if (userAns === q.correctIndex) {
+                    totalScore += q.points;
+                    document.getElementById(`label-${qIndex}-${userAns}`).classList.add('correct-answer');
+                } else {
+                    document.getElementById(`label-${qIndex}-${userAns}`).classList.add('wrong-answer');
+                    // Highlight luôn đáp án đúng cho user biết
+                    document.getElementById(`label-${qIndex}-${q.correctIndex}`).classList.add('correct-answer');
+                }
+            } else {
+                // Nếu chưa chọn, highlight đáp án đúng
+                document.getElementById(`label-${qIndex}-${q.correctIndex}`).classList.add('correct-answer');
+            }
+            
+            // Vô hiệu hóa các nút radio để không cho sửa lại sau khi nộp
+            const radios = document.querySelectorAll(`input[name="question-${qIndex}"]`);
+            radios.forEach(r => r.disabled = true);
+        });
+
+        // Xử lý làm tròn số thập phân (tránh lỗi float của JS)
+        totalScore = Math.round(totalScore * 100) / 100;
+        maxScore = Math.round(maxScore * 100) / 100;
+
+        // Giả lập thang điểm 10 nếu đang chạy đủ 50 câu, ở đây dùng tỷ lệ phần trăm
+        let scaledScore = (totalScore / maxScore) * 10;
+        scaledScore = Math.round(scaledScore * 100) / 100;
+
+        displayResult(scaledScore);
+        
+        // Ẩn nút nộp bài
+        document.querySelector('.submit-btn').style.display = 'none';
+        
+        // Cuộn xuống kết quả
+        document.getElementById('result-container').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Hàm hiển thị kết quả đánh giá
+    function displayResult(score) {
+        const resultContainer = document.getElementById('result-container');
+        const scoreDisplay = document.getElementById('score-display');
+        const feedbackDisplay = document.getElementById('feedback-display');
+
+        resultContainer.style.display = 'block';
+        scoreDisplay.innerHTML = `Điểm của bạn: <span style="color:#e74c3c; font-size:1.5em;">${score} / 10</span>`;
+
+        let feedbackHtml = "";
+        
+        if (score < 5.0) {
+            feedbackHtml = "<strong>MỨC YẾU/CHƯA ĐẠT (Beginner):</strong><br>Bạn mới chỉ nắm được một vài thuật ngữ rời rạc. Hãy quay lại đọc kỹ lý thuyết các Module cốt lõi và thực hành lại các lệnh cơ bản trong Kali Linux.";
+        } else if (score >= 5.0 && score <= 6.9) {
+            feedbackHtml = "<strong>MỨC TRUNG BÌNH/KHÁ (SecOps Apprentice):</strong><br>Bạn đã có nền tảng lý thuyết tương đối ổn. Tuy nhiên, tư duy phòng thủ chiều sâu và phân tích tình huống thực chiến vẫn cần trau dồi thêm.";
+        } else if (score >= 7.0 && score <= 8.4) {
+            feedbackHtml = "<strong>MỨC GIỎI (Ethical Hacker):</strong><br>Bạn có tư duy rất tốt, nắm chắc cấu trúc kiến thức chuẩn CEH v11. Bạn hoàn toàn đủ tự tin để tham gia các dự án đánh giá an ninh mạng cơ bản.";
+        } else {
+            feedbackHtml = "<strong>MỨC XUẤT SẮC (Cyber Security Expert):</strong><br>Xin chúc mừng! Bạn sở hữu tư duy của một chuyên gia an ninh mạng thực thụ. Bạn không chỉ thuộc lòng lý thuyết mà còn làm chủ bản chất kỹ thuật sâu sắc.";
+        }
+
+        feedbackDisplay.innerHTML = feedbackHtml;
+    }
+
+    // Khởi tạo bài thi khi load trang
+    window.onload = renderQuiz;
+
+</script>
+</body>
+</html>
