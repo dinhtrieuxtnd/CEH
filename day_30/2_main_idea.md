@@ -1,0 +1,11 @@
+Dưới đây là bản tóm tắt cốt lõi của bài giảng **NGÀY 30: MẬT MÃ HỌC - LÁ CHẮN CUỐI CÙNG TRONG AN NINH MẠNG** dành cho các em:
+
+1. 🛡️ **MẬT MÃ HỌC LÀ LÁ CHẮN CUỐI CÙNG:** Đây là tầng phòng thủ tối thượng bảo vệ tính toàn vẹn và bí mật của thông tin, giữ cho dữ liệu luôn an toàn ngay cả khi kẻ tấn công đã vượt qua mọi tường thành và chiếm được tệp tin gốc.
+2. 🔑 **MÃ HÓA ĐỐI XỨNG CỰC NHANH:** Cơ chế này sử dụng **MỘT KHÓA DUY NHẤT** cho cả hai quá trình mã hóa và giải mã dữ liệu. Nhờ thuật toán xử lý rất nhanh, nó thường được ứng dụng để bảo vệ các khối dữ liệu hoặc tệp tin có dung lượng lớn.
+3. 📮 **MÃ HÓA BẤT ĐỐI XỨNG GIẢI BÀI TOÁN TRUYỀN KHÓA:** Phương pháp này dùng **CẶP KHÓA CÔNG KHAI VÀ BÍ MẬT** độc lập để xử lý thông tin bảo mật. Tuy tốc độ tính toán chậm hơn nhiều so với mã hóa đối xứng, nó lại giải quyết triệt để vấn đề phân phối chìa khóa an toàn qua Internet.
+4. 🤝 **HTTPS LÀ SỰ KẾT HỢP HOÀN HẢO:** Giao thức kết nối web an toàn bảo mật (SSL/TLS) vận hành bằng cách phối hợp cả hai mô hình mã hóa. Hệ thống dùng mã hóa bất đối xứng để trao đổi chìa khóa phiên một cách an toàn, sau đó lập tức chuyển sang mã hóa đối xứng để tối ưu hóa tốc độ truyền dữ liệu.
+5. 👣 **HÀM BĂM LÀ DẤU VÂN TAY SỐ:** Khác với mã hóa thông thường, hàm băm là **THUẬT TOÁN MỘT CHIỀU** giúp tạo ra chuỗi ký tự cố định để kiểm tra tính toàn vẹn của dữ liệu và lưu trữ mật khẩu an toàn.
+6. 🧂 **KỸ THUẬT SALT VÔ HIỆU HÓA RAINBOW TABLE:** Việc cộng thêm chuỗi ký tự ngẫu nhiên vào mật khẩu trước khi băm sẽ giúp bảo vệ tối đa cơ sở dữ liệu. Nó ngăn chặn hoàn toàn khả năng hacker dùng bảng tra cứu có sẵn để dò tìm mật khẩu gốc một cách nhanh chóng.
+7. ⚠️ **TRÁNH TỰ CHẾ THUẬT TOÁN VÀ NHẦM LẪN ĐỊNH DẠNG:** Chuyên gia tuyệt đối không tự phát minh quy luật mật mã riêng vì chúng rất dễ bị bẻ gãy, đồng thời phải phân biệt rõ giữa mã hóa bảo mật với việc mã hóa định dạng bề nổi như **BASE64**.
+
+💡 **SLOGAN CHỐT HẠ THẦN THÁI:** > *"Thuật toán có thể công khai, nhưng chìa khóa phải giữ kín; Tường thành có thể sụp đổ, nhưng Mật mã phải vững bền!"*

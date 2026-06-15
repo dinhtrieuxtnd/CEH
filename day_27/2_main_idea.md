@@ -1,0 +1,10 @@
+Dưới đây là bản tóm tắt cốt lõi của bài giảng **NGÀY 27: Tấn Công Mạng Không Dây & Chiến Lược Nâng Cấp WPA3** dành cho các em:
+
+1. 📻 **CARD MẠNG MONITOR MODE LÀ LỐI VÀO:** Sóng Wi-Fi bản chất truyền công khai trong không khí như loa phóng thanh. Hacker bắt buộc phải kích hoạt chế độ **MONITOR MODE** trên card mạng để có thể "nghe lén" và thu thập toàn bộ gói tin của các mạng xung quanh.
+2. 💥 **ĐÒN TẤN CÔNG DEAUTHENTICATION CHỦ ĐỘNG:** Để không phải mất thời gian chờ đợi mỏi mòn, hacker chủ động gửi các gói tin giả mạo mang tên **DEAUTHENTICATION** nhằm đá văng thiết bị nạn nhân ra khỏi mạng. Thiết bị theo cơ chế tự động sẽ ngay lập tức gửi yêu cầu kết nối lại với Router.
+3. 🤝 **TỬ HUYỆT 4-WAY HANDSHAKE CỦA WPA2:** Quy trình bắt tay 4 bước (**4-WAY HANDSHAKE**) diễn ra công khai khi thiết bị kết nối lại nhằm chứng minh hai bên giữ mật khẩu đúng. Hacker rình rập thu giữ trọn vẹn luồng dữ liệu này và lưu vào file `.cap` hoặc `.pcap`.
+4. 💻 **BẺ KHÓA NGOẠI TUYẾN REO RẮC NGUY CƠ:** Có được file handshake, hacker mang về máy cá nhân dùng GPU chạy đòn tấn công từ điển ngoại tuyến (**OFFLINE DICTIONARY ATTACK**). Cuộc tấn công này diễn ra hoàn toàn âm thầm, Router mục tiêu không hề hay biết nên không thể kích hoạt cơ chế ngăn chặn hay khóa IP.
+5. 🛡️ **WPA3 CHẶN ĐỨNG OFFLINE ATTACK:** Chuẩn bảo mật thế hệ mới WPA3 thay thế PSK bằng giao thức xác thực **SAE**. Cơ chế này buộc hacker phải tương tác trực tiếp (**ONLINE**) cho từng lần đoán mật khẩu, triệt tiêu hoàn toàn khả năng bẻ khóa ngoại tuyến ngay cả khi đặt mật khẩu yếu.
+6. 🚧 **BẢO VỆ MẠNG DOANH NGHIỆP TOÀN DIỆN:** Doanh nghiệp cần triển khai **WPA3-ENTERPRISE** độc lập để chống đòn tấn công hạ cấp (Downgrade Attack). Đồng thời, hãy kích hoạt cơ chế bảo vệ gói tin quản trị **802.11w (MFP)** để ngăn kẻ xấu dùng lệnh ngắt kết nối Deauth bừa bãi.
+
+💡 **SLOGAN CHỐT HẠ:** *"Sóng truyền không trung, rình rập muôn trùng; nâng cấp WPA3, bảo mật kiên trung!"*

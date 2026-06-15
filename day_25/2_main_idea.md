@@ -1,0 +1,11 @@
+Dưới đây là bản tóm tắt cốt lõi của bài giảng **NGÀY 25: LỖ HỔNG ỨNG DỤNG WEB (OWASP TOP 10) & CHIẾN THUẬT XSS**:
+
+1. 🌐 **KIẾN TRÚC ĐA TẦNG LÀ GỐC RỄ:** Ứng dụng Web hoạt động dựa trên cấu trúc 3 tầng gồm FRONT-END (Giao diện), BACK-END (Xử lý) và DATABASE (Dữ liệu). Hacker luôn tìm cách lợi dụng sự thiếu kiểm dịch giữa các tầng để chèn mã độc hại từ ngoài vào trong.
+2. 📋 **OWASP TOP 10 LÀ KIM CHỈ NAM:** Đây là danh sách 10 lỗ hổng bảo mật ứng dụng Web PHỔ BIẾN và NGUY HIỂM nhất toàn cầu do tổ chức OWASP công bố. Việc nắm rõ danh sách này giúp các chuyên gia định hình được bản đồ các vectơ tấn công trọng điểm vào hệ thống Web.
+3. 🪞 **REFLECTED XSS LÀ SỰ PHẢN XẠ:** Biến thể XSS này không lưu trữ mã độc trên máy chủ mà PHẢN XẠ NGAY LẬP TỨC qua trình duyệt khi người dùng gửi một yêu cầu (Request). Hacker thường giấu mã JavaScript độc hại vào các đường LINK URL và lừa nạn nhân bấm vào để kích hoạt.
+4. 💾 **STORED XSS LÀ SỰ LƯU TRỮ:** Đây là dạng XSS nguy hiểm nhất vì mã độc được hacker GỬI VÀO CƠ SỞ DỮ LIỆU của trang web thông qua các ô bình luận hoặc hồ sơ cá nhân. Bất kỳ người dùng nào ghé thăm trang web đều tự động bị TRÌNH DUYỆT THỰC THI mã độc vĩnh viễn mà không cần bấm link lạ.
+5. 🍪 **ĐÁNH CẮP COOKIE LÀ MỤC TIÊU TỐI THƯỢNG:** Mục đích nguy hiểm hàng đầu của tấn công XSS là chiếm đoạt SESSION COOKIE (mã phiên đăng nhập). Khi có được chiếc "thẻ thông hành" này, hacker dễ dàng ĐĂNG NHẬP THẲNG VÀO TÀI KHOẢN nạn nhân mà không cần biết mật khẩu hay vượt qua lớp 2FA.
+6. 🛡️ **OUTPUT ENCODING LÀ LÁ CHẮN CHÍNH:** Giải pháp vá lỗi XSS triệt để nhất là MÃ HÓA ĐẦU RA (Output Encoding), chuyển các ký tự nguy hiểm như `<`, `>` thành dạng văn bản an toàn (`&lt;`, `&gt;`). Điều này ép trình duyệt chỉ HIỂN THỊ nội dung thay vì biên dịch và thực thi chúng như câu lệnh.
+7. 🔐 **HTTPONLY COOKIE LÀ ĐAI AN TOÀN:** Việc cấu hình thuộc tính HTTPONLY cho Cookie quan trọng ở phía Server sẽ cấm tuyệt đối JavaScript tiếp cận dữ liệu phiên. Kể cả khi trang web bị dính lỗ hổng XSS thành công, hacker cũng BẤT LỰC, không thể đọc trộm được Session Token của người dùng.
+
+🚀 **Slogan chốt hạ tinh thần bài học:** *"Đừng để trình duyệt bị thôi miên: Lọc mọi đầu vào, mã hóa mọi đầu ra!"*

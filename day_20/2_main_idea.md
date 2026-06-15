@@ -1,0 +1,10 @@
+Dưới đây là bản tóm tắt cốt lõi nội dung bài giảng NGÀY 20: Tấn Công Từ Chối Dịch Vụ (DoS/DDoS) dành cho bạn:
+
+1. 🎯 **BẢO VỆ TÍNH SẴN SÀNG (Availability):** Tấn công DoS/DDoS không nhằm mục đích lấy trộm hay phá hủy dữ liệu, mà nhắm vào mục tiêu tối thượng là ĐÁNH SẬP năng lực đáp ứng của hệ thống, khiến người dùng hợp pháp bị từ chối phục vụ.
+2. 👥 **SỰ KHÁC BIỆT NGUỒN LỰC (DoS vs DDoS):** DoS là đòn bóp nghẹt tài nguyên xuất phát từ MỘT NGUỒN duy nhất nên dễ dàng xử lý bằng cách chặn IP, trong khi DDoS huy động HÀNG TRIỆU NGUỒN phân tán đồng thời dội bom dữ liệu khiến việc truy tìm và ngăn chặn trở nên cực kỳ phức tạp.
+3. 🧟 **BỘ BA THÂN XÁC MA (Botnet Ecosystem):** Kẻ tấn công xây dựng đội quân thây ma (Botnet) bằng cách phát tán mã độc để biến thiết bị vô tội của người dùng (Bot/Zombie) thành công cụ tấn công dưới sự chỉ huy của máy chủ trung tâm (C&C Server).
+4. 🌊 **LŨ LỤT TẦNG HẠ TẦNG (Volume Attacks):** Các đòn đánh Layer 3/4 kinh điển như SYN Flood lợi dụng quy trình bắt tay TCP "nửa vời", UDP Flood ép CPU xử lý báo lỗi liên tục, hay ICMP Flood trực tiếp làm nghẽn băng thông nhờ tần suất dội tin khổng lồ.
+5. 🥷 **SỰ TINH VI TẦNG ỨNG DỤNG (Application Attacks):** Tấn công HTTP Flood (Layer 7) ngụy trang hoàn hảo dưới dạng các yêu cầu hợp pháp của người dùng nhưng ép máy chủ phải truy vấn sâu, đánh sập RAM/CPU mà không cần làm tăng đột biến băng thông mạng.
+6. 🛡️ **HỆ THỐNG PHÒNG THỦ CHIỀU SÂU (Mitigation):** Để sống sót trước DDoS, doanh nghiệp cần chủ động GIẢM VÙNG PHƠI NHIỄM (đóng cổng thừa), giới hạn tốc độ kết nối (Rate Limiting), và triển khai giải pháp màng lọc ngược dòng (Reverse Proxy - Cloudflare) để hấp thụ/lọc bỏ lưu lượng rác.
+
+💡 **SLOGAN CHỐT HẠ:** *"Đừng cố ngăn chặn cơn lũ dữ của kẻ thù; hãy xây dựng một chiếc đập kiên cố để hấp thụ và thanh lọc dòng tiền!"*
