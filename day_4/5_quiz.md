@@ -8,43 +8,43 @@ Dưới đây là bộ quiz 10 câu trắc nghiệm được biên soạn chi ti
 
 **Câu 1: Bản ghi nào trong hệ thống DNS chịu trách nhiệm ánh xạ một tên miền hoặc tên miền con (subdomain) sang một địa chỉ IPv4 cụ thể?**
 
-A. Bản ghi MX
+* A. Bản ghi MX
 
-B. Bản ghi A
+* B. Bản ghi A
 
-C. Bản ghi NS
+* C. Bản ghi NS
 
-D. Bản ghi TXT
+* D. Bản ghi TXT
 
 **Câu 2: Giao thức hoặc công cụ nào dưới đây cho phép thu thập thông tin về nhà đăng ký (Registrar), ngày tạo, ngày hết hạn và thông tin liên hệ kỹ thuật của một tên miền?**
 
-A. Traceroute
+* A. Traceroute
 
-B. Nslookup
+* B. Nslookup
 
-C. Whois
+* C. Whois
 
-D. Dig
+* D. Dig
 
 **Câu 3: Bản ghi nào trong hệ thống DNS chỉ định máy chủ chịu trách nhiệm xử lý và tiếp nhận email cho một doanh nghiệp?**
 
-A. Bản ghi A
+* A. Bản ghi A
 
-B. Bản ghi TXT
+* B. Bản ghi TXT
 
-C. Bản ghi NS
+* C. Bản ghi NS
 
-D. Bản ghi MX
+* D. Bản ghi MX
 
 **Câu 4: Khi sử dụng công cụ Traceroute, các ký tự `* * *` trả về tại một chặng (Hop) nhất định biểu thị điều gì?**
 
-A. Máy chủ mục tiêu đã bị sập hoàn toàn
+* A. Máy chủ mục tiêu đã bị sập hoàn toàn
 
-B. Băng thông mạng tại vị trí đó đã bị nghẽn
+* B. Băng thông mạng tại vị trí đó đã bị nghẽn
 
-C. Thiết bị định tuyến tại chặng đó cấu hình chặn gói tin ICMP/UDP kiểm thám
+* C. Thiết bị định tuyến tại chặng đó cấu hình chặn gói tin ICMP/UDP kiểm thám
 
-D. Địa chỉ IP của mục tiêu không tồn tại
+* D. Địa chỉ IP của mục tiêu không tồn tại
 
 ---
 
@@ -52,33 +52,33 @@ D. Địa chỉ IP của mục tiêu không tồn tại
 
 **Câu 5: Tại sao việc thu thập thông tin từ dịch vụ Whois công cộng và truy vấn DNS lại được phân loại là phương pháp Trinh sát bị động (Passive Footprinting)?**
 
-A. Vì hacker phải sử dụng các phần mềm mã nguồn mở để chạy dòng lệnh
+* A. Vì hacker phải sử dụng các phần mềm mã nguồn mở để chạy dòng lệnh
 
-B. Vì các yêu cầu truy vấn được gửi tới các máy chủ công cộng trung gian, không tương tác trực tiếp và không để lại log trên hệ thống của nạn nhân
+* B. Vì các yêu cầu truy vấn được gửi tới các máy chủ công cộng trung gian, không tương tác trực tiếp và không để lại log trên hệ thống của nạn nhân
 
-C. Vì phương pháp này bắt buộc phải thực hiện vào ban đêm khi hệ thống ít hoạt động
+* C. Vì phương pháp này bắt buộc phải thực hiện vào ban đêm khi hệ thống ít hoạt động
 
-D. Vì dữ liệu thu về chỉ có giá trị tham khảo, không dùng để tấn công được
+* D. Vì dữ liệu thu về chỉ có giá trị tham khảo, không dùng để tấn công được
 
 **Câu 6: Bản chất kỹ thuật của cơ chế hoạt động của lệnh Traceroute (hoặc Tracert trên Windows) dựa vào trường dữ liệu nào trong phần đầu (Header) của gói tin IP?**
 
-A. Trường TTL (Time to Live)
+* A. Trường TTL (Time to Live)
 
-B. Trường Checksum lỗi
+* B. Trường Checksum lỗi
 
-C. Trường Kích thước gói tin (Payload Size)
+* C. Trường Kích thước gói tin (Payload Size)
 
-D. Trường Số thứ tự gói tin (Sequence Number)
+* D. Trường Số thứ tự gói tin (Sequence Number)
 
 **Câu 7: Một quản trị viên cấu hình bộ lọc bảo mật email của công ty bằng cách thêm một chuỗi ký tự dạng `v=spf1 include:_spf.google.com ~all` vào hệ thống DNS. Bản ghi này phải thuộc loại bản ghi nào?**
 
-A. Bản ghi A
+* A. Bản ghi A
 
-B. Bản ghi CNAME
+* B. Bản ghi CNAME
 
-C. Bản ghi TXT
+* C. Bản ghi TXT
 
-D. Bản ghi PTR
+* D. Bản ghi PTR
 
 ---
 
@@ -86,33 +86,33 @@ D. Bản ghi PTR
 
 **Câu 8: Trong một đợt kiểm thử an ninh mạng (Penetration Testing) cho một công ty tài chính, hacker thực hiện lệnh `dig company.com A +short` và nhận về kết quả là địa chỉ IP `104.26.3.128`. Tra cứu IP này cho thấy nó thuộc sở hữu của Cloudflare. Hành động tiếp theo nào của hacker là ĐÚNG ĐẮN nhất dưới góc độ kỹ thuật?**
 
-A. Sử dụng công cụ tự động quét lỗ hổng trực tiếp vào địa chỉ IP `104.26.3.128` này
+* A. Sử dụng công cụ tự động quét lỗ hổng trực tiếp vào địa chỉ IP `104.26.3.128` này
 
-B. Tiến hành tìm kiếm các lỗ hổng cấu hình hoặc bản ghi DNS lịch sử để tìm ra IP gốc (Backend IP) đứng sau Cloudflare
+* B. Tiến hành tìm kiếm các lỗ hổng cấu hình hoặc bản ghi DNS lịch sử để tìm ra IP gốc (Backend IP) đứng sau Cloudflare
 
-C. Kết luận hệ thống hoàn toàn an toàn và chuyển sang mục tiêu khác
+* C. Kết luận hệ thống hoàn toàn an toàn và chuyển sang mục tiêu khác
 
-D. Gửi email lừa đảo (Phishing) trực tiếp tới Cloudflare để chiếm quyền quản trị
+* D. Gửi email lừa đảo (Phishing) trực tiếp tới Cloudflare để chiếm quyền quản trị
 
 **Câu 9: Bạn đang thực hiện điều tra một email lừa đảo mạo danh đối tác gửi tới phòng kế toán của công ty. Khi thực hiện truy vấn bản ghi MX của tên miền đối tác thật, bạn thấy hệ thống trả về chuỗi `inbound-smtp.us-east-1.amazonaws.com`. Tuy nhiên, kết quả tra cứu Whois của tên miền cho thấy thông tin đăng ký mới thay đổi cách đây 2 ngày tại một nhà đăng ký giá rẻ ở Đông Âu. Dấu hiệu này chỉ ra kịch bản nào khả thi nhất?**
 
-A. Đối tác thật đang nâng cấp hệ thống email văn phòng lên đám mây Amazon
+* A. Đối tác thật đang nâng cấp hệ thống email văn phòng lên đám mây Amazon
 
-B. Kẻ tấn công đã mua lại một tên miền gần giống (Typosquatting) hoặc chiếm quyền kiểm soát thông tin Whois để thực hiện lừa đảo công ty bạn
+* B. Kẻ tấn công đã mua lại một tên miền gần giống (Typosquatting) hoặc chiếm quyền kiểm soát thông tin Whois để thực hiện lừa đảo công ty bạn
 
-C. Máy chủ DNS của Amazon đang bị tấn công DDoS nghẽn mạng
+* C. Máy chủ DNS của Amazon đang bị tấn công DDoS nghẽn mạng
 
-D. Hệ thống mạng nội bộ của công ty bạn bị nhiễm mã độc nghe lén dữ liệu
+* D. Hệ thống mạng nội bộ của công ty bạn bị nhiễm mã độc nghe lén dữ liệu
 
 **Câu 10: Bạn là chuyên gia bảo mật được thuê để giảm thiểu rủi ro bị thu thập thông tin (Footprinting) cho một tập đoàn lớn. Biện pháp nào sau đây giúp bảo vệ thông tin nhân sự vận hành hệ thống khỏi bị khai thác qua dịch vụ tra cứu Whois công cộng?**
 
-A. Cấu hình chặn toàn bộ cổng 53 (DNS) trên hệ thống tường lửa lõi
+* A. Cấu hình chặn toàn bộ cổng 53 (DNS) trên hệ thống tường lửa lõi
 
-B. Đổi toàn bộ các bản ghi A sang bản ghi dạng CNAME
+* B. Đổi toàn bộ các bản ghi A sang bản ghi dạng CNAME
 
-C. Kích hoạt dịch vụ Whois Privacy (Ẩn thông tin tên miền) thông qua nhà đăng ký tên miền (Registrar)
+* C. Kích hoạt dịch vụ Whois Privacy (Ẩn thông tin tên miền) thông qua nhà đăng ký tên miền (Registrar)
 
-D. Mã hóa nội dung toàn bộ trang web bằng thuật toán RSA 2048-bit
+* D. Mã hóa nội dung toàn bộ trang web bằng thuật toán RSA 2048-bit
 
 ---
 

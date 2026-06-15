@@ -9,72 +9,112 @@ Cấu trúc bộ câu hỏi được phân tách rõ ràng theo đúng 3 cấp �
 #### MỨC ĐỘ 1: NHẬN BIẾT (4 CÂU)
 
 **Câu 1:** Chuẩn mã hóa Wi-Fi quốc dân WPA2-PSK sử dụng thuật toán mã hóa cốt lõi nào sau đây để bảo vệ luồng dữ liệu truyền tải?
-A. RC4
-B. DES
-C. MD5
-D. AES
+
+* A. RC4
+
+* B. DES
+
+* C. MD5
+
+* D. AES
 
 **Câu 2:** Giao thức nào sau đây được tích hợp vào chuẩn bảo mật thế hệ mới WPA3 nhằm thay thế cơ chế xác thực Pre-Shared Key (PSK) lỗi thời của WPA2?
-A. TKIP
-B. CCMP
-C. SAE (Simultaneous Authentication of Equals)
-D. EAP-TLS
+
+* A. TKIP
+
+* B. CCMP
+
+* C. SAE (Simultaneous Authentication of Equals)
+
+* D. EAP-TLS
 
 **Câu 3:** Để thực hiện việc rình rập và thu giữ lưu lượng mạng Wi-Fi của các thiết bị xung quanh một cách chủ động, card mạng không dây của kẻ tấn công bắt buộc phải chuyển sang chế độ hoạt động nào?
-A. Managed Mode
-B. Monitor Mode
-C. Ad-Hoc Mode
-D. Promiscuous Mode trong mạng dây
+
+* A. Managed Mode
+
+* B. Monitor Mode
+
+* C. Ad-Hoc Mode
+
+* D. Promiscuous Mode trong mạng dây
 
 **Câu 4:** Quá trình trao đổi khóa mã hóa diễn ra công khai giữa thiết bị khách (Client) và trạm phát sóng (Access Point) trong cấu hình bảo mật WPA2 được gọi là gì?
-A. 3-Way Handshake
-B. 4-Way Handshake
-C. Diffie-Hellman Handshake
-D. RADIUS Handshake
+
+* A. 3-Way Handshake
+
+* B. 4-Way Handshake
+
+* C. Diffie-Hellman Handshake
+
+* D. RADIUS Handshake
 
 ---
 
 #### MỨC ĐỘ 2: THÔNG HIỂU (3 CÂU)
 
 **Câu 5:** Tại sao đòn tấn công bẻ khóa mật khẩu ngoại tuyến (Offline Dictionary Attack) nhắm vào tệp tin `.cap/.pcap` thu giữ được từ quy trình WPA2 Handshake lại cực kỳ nguy hiểm đối với hệ thống?
-A. Vì nó gây cạn kiệt tài nguyên băng thông và làm sập thiết bị Router Wi-Fi của mục tiêu.
-B. Vì kẻ tấn công có thể mang file này về hệ thống riêng của họ để rà quét mật khẩu thông qua sức mạnh xử lý của GPU mà thiết bị phát sóng của nạn nhân không hề hay biết để ngăn chặn hay khóa IP.
-C. Vì gói tin Handshake thu giữ được luôn chứa mật khẩu Wi-Fi của nạn nhân dưới dạng văn bản rõ (Plaintext).
-D. Vì đòn tấn công này giúp hacker tự động chiếm đặc quyền root trên máy chủ RADIUS nội bộ.
+
+* A. Vì nó gây cạn kiệt tài nguyên băng thông và làm sập thiết bị Router Wi-Fi của mục tiêu.
+
+* B. Vì kẻ tấn công có thể mang file này về hệ thống riêng của họ để rà quét mật khẩu thông qua sức mạnh xử lý của GPU mà thiết bị phát sóng của nạn nhân không hề hay biết để ngăn chặn hay khóa IP.
+
+* C. Vì gói tin Handshake thu giữ được luôn chứa mật khẩu Wi-Fi của nạn nhân dưới dạng văn bản rõ (Plaintext).
+
+* D. Vì đòn tấn công này giúp hacker tự động chiếm đặc quyền root trên máy chủ RADIUS nội bộ.
 
 **Câu 6:** Điểm yếu logic cốt lõi nào thuộc quy trình bắt tay của giao thức WPA2 đã bị đòn tấn công KRACKs (Key Reinstallation Attacks) khai thác vào năm 2017?
-A. Độ dài của Vectơ khởi tạo (IV) chỉ có 24-bit dẫn đến va chạm khóa.
-B. Thiết bị AP gửi mật khẩu trực tiếp qua không gian không mã hóa ở bước thứ 4.
-C. Logic hệ thống cho phép ép thiết bị khách cài đặt lại một khóa mã hóa đã từng sử dụng khi gói tin ở Bước 3 bị truyền lại, làm mất tính ngẫu nhiên của bộ đếm mật mã.
-D. Cơ chế bắt buộc thiết bị khách phải sử dụng thuật toán băm yếu MD4 để kiểm tra MIC.
+
+* A. Độ dài của Vectơ khởi tạo (IV) chỉ có 24-bit dẫn đến va chạm khóa.
+
+* B. Thiết bị AP gửi mật khẩu trực tiếp qua không gian không mã hóa ở bước thứ 4.
+
+* C. Logic hệ thống cho phép ép thiết bị khách cài đặt lại một khóa mã hóa đã từng sử dụng khi gói tin ở Bước 3 bị truyền lại, làm mất tính ngẫu nhiên của bộ đếm mật mã.
+
+* D. Cơ chế bắt buộc thiết bị khách phải sử dụng thuật toán băm yếu MD4 để kiểm tra MIC.
 
 **Câu 7:** Bản chất toán học nào giúp giao thức SAE trong WPA3 triệt tiêu hoàn toàn nguy cơ bị bẻ khóa mật khẩu bằng đòn tấn công từ điển ngoại tuyến (Offline Dictionary Attack)?
-A. SAE sử dụng thuật toán trao đổi khóa dựa trên bài toán hình học đường cong Elliptic (Diffie-Hellman), buộc kẻ tấn công phải thực hiện một phiên tương tác trực tiếp (Online) với Router cho mỗi lần đoán mật mã.
-B. SAE tự động thay đổi độ dài mật khẩu của người dùng lên thành 256 ký tự ngẫu nhiên.
-C. SAE mã hóa toàn bộ tên sóng Wi-Fi (SSID) khiến card mạng hacker không thể dò quét được.
-D. SAE loại bỏ hoàn toàn việc tính toán mã integrity MIC trong luồng truyền tin.
+
+* A. SAE sử dụng thuật toán trao đổi khóa dựa trên bài toán hình học đường cong Elliptic (Diffie-Hellman), buộc kẻ tấn công phải thực hiện một phiên tương tác trực tiếp (Online) với Router cho mỗi lần đoán mật mã.
+
+* B. SAE tự động thay đổi độ dài mật khẩu của người dùng lên thành 256 ký tự ngẫu nhiên.
+
+* C. SAE mã hóa toàn bộ tên sóng Wi-Fi (SSID) khiến card mạng hacker không thể dò quét được.
+
+* D. SAE loại bỏ hoàn toàn việc tính toán mã integrity MIC trong luồng truyền tin.
 
 ---
 
 #### MỨC ĐỘ 3: VẬN DỤNG (3 CÂU)
 
 **Câu 8:** Đang ngồi trong văn phòng công ty, điện thoại của một nhân viên đột ngột bị mất kết nối Wi-Fi liên tục trong vòng 10 giây, sau đó tự động kết nối lại. Khi bật công cụ giám sát Wireshark lên rà soát, chuyên gia SOC phát hiện một chuỗi các gói tin quản trị (Management Frames) gửi liên tục mang mã code ngắt kết nối lặp đi lặp lại nhắm vào địa chỉ MAC của điện thoại đó. Hệ thống văn phòng đang bị tấn công bởi kỹ thuật nào?
-A. MAC Flooding Attack
-B. KRACKs Attack
-C. Deauthentication Attack
-D. Rogue Access Point Insertion
+
+* A. MAC Flooding Attack
+
+* B. KRACKs Attack
+
+* C. Deauthentication Attack
+
+* D. Rogue Access Point Insertion
 
 **Câu 9:** Một chuyên gia bảo mật tiến hành kiểm thử mạng Wi-Fi WPA2 nội bộ của một doanh nghiệp. Sau khi ngắt kết nối một máy trạm và bắt thành công gói tin WPA Handshake, chuyên gia này sử dụng file từ điển `rockyou.txt` chứa 14 triệu mật khẩu để chạy lệnh giải mã nhưng kết quả báo `KEY NOT FOUND`. Kết luận nào sau đây là chính xác nhất về mặt kỹ thuật?
-A. Hệ thống Wi-Fi này đã được nâng cấp lên WPA3 nên không thể dùng file handshake.
-B. Mật khẩu Wi-Fi hiện tại của doanh nghiệp là một mật khẩu mạnh, không nằm trong danh sách các mật khẩu phổ biến của tệp từ điển thử nghiệm.
-C. Card mạng của chuyên gia bảo mật chưa bật chế độ Monitor Mode nên file bắt tay bị lỗi cấu trúc.
-D. Thiết bị Router của doanh nghiệp đã chặn đứng địa chỉ IP của chuyên gia bảo mật trong quá trình bẻ khóa ngoại tuyến.
+
+* A. Hệ thống Wi-Fi này đã được nâng cấp lên WPA3 nên không thể dùng file handshake.
+
+* B. Mật khẩu Wi-Fi hiện tại của doanh nghiệp là một mật khẩu mạnh, không nằm trong danh sách các mật khẩu phổ biến của tệp từ điển thử nghiệm.
+
+* C. Card mạng của chuyên gia bảo mật chưa bật chế độ Monitor Mode nên file bắt tay bị lỗi cấu trúc.
+
+* D. Thiết bị Router của doanh nghiệp đã chặn đứng địa chỉ IP của chuyên gia bảo mật trong quá trình bẻ khóa ngoại tuyến.
 
 **Câu 10:** Bạn được thuê làm kiến trúc sư an ninh mạng cho một ngân hàng lớn. Để ngăn chặn triệt để đòn tấn công Ngắt kết nối (Deauthentication Attack) nhằm phá hoại hoặc ép người dùng văng ra ngoài để bắt Handshake, bạn cần cấu hình tính năng kỹ thuật nào sau đây trên hệ thống Controller/Access Point?
-A. Tắt tính năng phát quảng bá tên sóng Wi-Fi (Disable SSID Broadcasting).
-B. Kích hoạt tính năng bảo vệ gói tin quản trị 802.11w - MFP (Management Frame Protection).
-C. Cấu hình bộ lọc địa chỉ MAC (MAC Filtering List) chỉ cho phép thiết bị của nhân viên kết nối.
-D. Nâng cấp băng thông đường truyền internet của nhà mạng lên gấp đôi.
+
+* A. Tắt tính năng phát quảng bá tên sóng Wi-Fi (Disable SSID Broadcasting).
+
+* B. Kích hoạt tính năng bảo vệ gói tin quản trị 802.11w - MFP (Management Frame Protection).
+
+* C. Cấu hình bộ lọc địa chỉ MAC (MAC Filtering List) chỉ cho phép thiết bị của nhân viên kết nối.
+
+* D. Nâng cấp băng thông đường truyền internet của nhà mạng lên gấp đôi.
 
 ---
 

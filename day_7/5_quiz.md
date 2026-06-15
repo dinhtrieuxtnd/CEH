@@ -9,72 +9,82 @@ Bộ câu hỏi được thiết kế theo các cấp độ tư duy từ dễ đ
 ## PHẦN 1: MỨC ĐỘ NHẬN BIẾT (4 Câu)
 
 **Câu 1:** Thuật ngữ "Banner Grabbing" trong kỹ thuật quét mạng được định nghĩa là gì?
-A. Kỹ thuật gửi gói tin độc hại để làm tràn bộ đệm hệ thống.
-B. Quy trình thu thập thông tin phiên bản phần mềm hiển thị mặc định từ các dịch vụ đang chạy.
-C. Hành vi thay đổi giao diện trang chủ của một website sau khi chiếm quyền điều khiển.
-D. Quá trình bắt gói tin thô trên đường truyền mạng ở chế độ Promiscuous.
+
+* A. Kỹ thuật gửi gói tin độc hại để làm tràn bộ đệm hệ thống.
+* B. Quy trình thu thập thông tin phiên bản phần mềm hiển thị mặc định từ các dịch vụ đang chạy.
+* C. Hành vi thay đổi giao diện trang chủ của một website sau khi chiếm quyền điều khiển.
+* D. Quá trình bắt gói tin thô trên đường truyền mạng ở chế độ Promiscuous.
 
 **Câu 2:** Giá trị TTL (Time to Live) mặc định ban đầu trong gói tin ICMP Echo Reply của hệ điều hành Linux/Unix thường là bao nhiêu?
-A. 32
-B. 64
-C. 128
-D. 255
+
+* A. 32
+* B. 64
+* C. 128
+* D. 255
 
 **Câu 3:** Lệnh nào sau đây của công cụ Nmap được sử dụng chuyên biệt để kích hoạt tính năng phát hiện Hệ điều hành (Active OS Fingerprinting)?
-A. `nmap -sV <Target_IP>`
-B. `nmap -sS <Target_IP>`
-C. `nmap -O <Target_IP>`
-D. `nmap -sn <Target_IP>`
+
+* A. `nmap -sV <Target_IP>`
+* B. `nmap -sS <Target_IP>`
+* C. `nmap -O <Target_IP>`
+* D. `nmap -sn <Target_IP>`
 
 **Câu 4:** Để xác định các chặng (Hops) bộ định tuyến mà gói tin đi qua từ máy kiểm thử đến máy chủ mục tiêu trên hệ điều hành Linux, công cụ nào được sử dụng?
-A. `ping`
-B. `nslookup`
-C. `traceroute`
-D. `netstat`
+
+* A. `ping`
+* B. `nslookup`
+* C. `traceroute`
+* D. `netstat`
 
 ---
 
 ## PHẦN 2: MỨC ĐỘ THÔNG HIỂU (3 Câu)
 
 **Câu 5:** Tại sao kỹ thuật Passive OS Fingerprinting (như sử dụng công cụ p0f) lại được coi là giải pháp tối ưu hơn Active OS Fingerprinting trong các chiến dịch kiểm thử đòi hỏi tính bí mật cao?
-A. Vì nó cho kết quả chính xác 100% đối với mọi thiết bị mạng mà không cần cơ sở dữ liệu.
-B. Vì nó chỉ thực hiện lắng nghe luồng dữ liệu hiện tại, không gửi thêm bất kỳ gói tin bất thường nào khiến hệ thống IDS/Firewall phát hiện.
-C. Vì nó có khả năng tự động tắt tường lửa của mục tiêu trước khi tiến hành nhận diện.
-D. Vì nó hoạt động ở tầng Ứng dụng (Application) nên không bị ảnh hưởng bởi giao thức TCP/IP.
+
+* A. Vì nó cho kết quả chính xác 100% đối với mọi thiết bị mạng mà không cần cơ sở dữ liệu.
+* B. Vì nó chỉ thực hiện lắng nghe luồng dữ liệu hiện tại, không gửi thêm bất kỳ gói tin bất thường nào khiến hệ thống IDS/Firewall phát hiện.
+* C. Vì nó có khả năng tự động tắt tường lửa của mục tiêu trước khi tiến hành nhận diện.
+* D. Vì nó hoạt động ở tầng Ứng dụng (Application) nên không bị ảnh hưởng bởi giao thức TCP/IP.
 
 **Câu 6:** Khi thực hiện lệnh kiểm tra kết nối mạng (Ping) đến một máy chủ nội bộ bí ẩn, kết quả trả về hiển thị giá trị `TTL = 127`. Dựa trên nguyên lý hoạt động của TTL, hệ điều hành của máy chủ này nhiều khả năng là gì và gói tin đã đi qua bao nhiêu Router?
-A. Hệ điều hành Linux, đi qua 1 Router.
-B. Hệ điều hành Windows, đi qua 1 Router.
-C. Hệ điều hành Windows, không đi qua Router nào (cùng mạng LAN).
-D. Thiết bị mạng Cisco, đi qua 128 Router.
+
+* A. Hệ điều hành Linux, đi qua 1 Router.
+* B. Hệ điều hành Windows, đi qua 1 Router.
+* C. Hệ điều hành Windows, không đi qua Router nào (cùng mạng LAN).
+* D. Thiết bị mạng Cisco, đi qua 128 Router.
 
 **Câu 7:** Một quản trị viên bảo mật thay đổi file cấu hình dịch vụ Web Apache để chuỗi hiển thị trả về cho người dùng luôn là `Server: Microsoft-IIS/10.0`. Hành động này có bản chất là gì?
-A. Nâng cấp hệ thống từ Apache lên IIS mà không cần cài đặt lại phần mềm.
-B. Cấu hình Honeypot mức tương tác cao để bẫy kẻ tấn công.
-C. Giả mạo Banner (Banner Spoofing) nhằm làm sai lệch kết quả trinh sát của kẻ tấn công.
-D. Mã hóa lưu lượng HTTP để phòng chống kỹ thuật nghe lén Sniffing.
+
+* A. Nâng cấp hệ thống từ Apache lên IIS mà không cần cài đặt lại phần mềm.
+* B. Cấu hình Honeypot mức tương tác cao để bẫy kẻ tấn công.
+* C. Giả mạo Banner (Banner Spoofing) nhằm làm sai lệch kết quả trinh sát của kẻ tấn công.
+* D. Mã hóa lưu lượng HTTP để phòng chống kỹ thuật nghe lén Sniffing.
 
 ---
 
 ## PHẦN 3: MỨC ĐỘ VẬN DỤNG (3 Câu)
 
 **Câu 8:** Trong một đợt đánh giá an ninh mạng nội bộ, chuyên gia Ethical Hacker chạy lệnh `sudo nmap -O 192.168.10.25` nhắm vào một thiết bị điều khiển công nghiệp (PLC) đời cũ. Thiết bị này bất ngờ bị mất kết nối và dừng hoạt động ngay sau đó. Nguyên nhân kỹ thuật nào hợp lý nhất giải thích cho sự cố trên?
-A. Lệnh `-O` đã kích hoạt một cuộc tấn công từ chối dịch vụ DDoS dạng SYN Flood làm cạn kiệt băng thông thiết bị.
-B. Nmap đã gửi các gói tin có cấu trúc dị dạng (malformed packets) để ép thiết bị phản hồi thuộc tính OS, nhưng phần cứng cũ không xử lý được dẫn đến tràn bộ đệm hoặc treo hệ thống.
-C. Thiết bị tự động kích hoạt cơ chế tự hủy dữ liệu khi phát hiện có hành vi quét cổng bảo mật.
-D. Địa chỉ IP của thiết bị trùng với địa chỉ IP của máy kiểm thử dẫn đến xung đột IP mạng.
+
+* A. Lệnh `-O` đã kích hoạt một cuộc tấn công từ chối dịch vụ DDoS dạng SYN Flood làm cạn kiệt băng thông thiết bị.
+* B. Nmap đã gửi các gói tin có cấu trúc dị dạng (malformed packets) để ép thiết bị phản hồi thuộc tính OS, nhưng phần cứng cũ không xử lý được dẫn đến tràn bộ đệm hoặc treo hệ thống.
+* C. Thiết bị tự động kích hoạt cơ chế tự hủy dữ liệu khi phát hiện có hành vi quét cổng bảo mật.
+* D. Địa chỉ IP của thiết bị trùng với địa chỉ IP của máy kiểm thử dẫn đến xung đột IP mạng.
 
 **Câu 9:** Giả sử bạn đang đứng trước một máy chủ Web đã bị quản trị viên ẩn toàn bộ thông tin Banner dịch vụ và cấu hình tường lửa chặn hoàn toàn các gói tin ICMP (không thể Ping). Bạn nên áp dụng chiến lược nào tiếp theo để nhận diện hệ điều hành của máy chủ này?
-A. Tiếp tục gửi các gói tin ICMP với kích thước lớn hơn để phá vỡ tường lửa.
-B. Sử dụng Nmap với tùy chọn quét dịch vụ và phân tích các đặc trưng phản hồi của giao thức TCP (`nmap -sV -p 80,443 --reason`) kết hợp với việc kiểm tra cấu trúc gói tin phản hồi thực tế.
-C. Sử dụng công cụ Whois để truy vấn thông tin đăng ký tên miền của máy chủ.
-D. Bỏ qua bước trinh sát và tiến hành brute-force mật khẩu quản trị ngay lập tức.
+
+* A. Tiếp tục gửi các gói tin ICMP với kích thước lớn hơn để phá vỡ tường lửa.
+* B. Sử dụng Nmap với tùy chọn quét dịch vụ và phân tích các đặc trưng phản hồi của giao thức TCP (`nmap -sV -p 80,443 --reason`) kết hợp với việc kiểm tra cấu trúc gói tin phản hồi thực tế.
+* C. Sử dụng công cụ Whois để truy vấn thông tin đăng ký tên miền của máy chủ.
+* D. Bỏ qua bước trinh sát và tiến hành brute-force mật khẩu quản trị ngay lập tức.
 
 **Câu 10:** Bạn thực hiện kiểm tra `traceroute` tới một máy chủ Web của doanh nghiệp và thu được sơ đồ đường đi của gói tin. Kết quả cho thấy chặng cuối cùng trước khi tới máy chủ phản hồi `TTL = 64` (Linux), trong khi tài liệu nội bộ ghi chú máy chủ Web của doanh nghiệp sử dụng hệ điều hành Windows Server. Nhận định nào sau đây phân tích đúng cấu trúc thực tế của hệ thống này?
-A. Máy chủ Web chạy hệ điều hành Windows đã bị Hacker xâm nhập thành công và cài đặt lại hệ điều hành thành Linux.
-B. Kết quả `traceroute` bị sai do đường truyền Internet không ổn định làm suy hao chỉ số TTL.
-C. Bạn đang nhìn thấy phản hồi từ một thiết bị trung gian đứng trước (như Firewall, Proxy, Load Balancer chạy Linux) đóng vai trò tiếp nhận và phản hồi thay cho máy chủ Web thật ở phía sau.
-D. Hệ điều hành Windows Server phiên bản mới đã thay đổi giá trị mặc định của chỉ số TTL từ 128 xuống 64.
+
+* A. Máy chủ Web chạy hệ điều hành Windows đã bị Hacker xâm nhập thành công và cài đặt lại hệ điều hành thành Linux.
+* B. Kết quả `traceroute` bị sai do đường truyền Internet không ổn định làm suy hao chỉ số TTL.
+* C. Bạn đang nhìn thấy phản hồi từ một thiết bị trung gian đứng trước (như Firewall, Proxy, Load Balancer chạy Linux) đóng vai trò tiếp nhận và phản hồi thay cho máy chủ Web thật ở phía sau.
+* D. Hệ điều hành Windows Server phiên bản mới đã thay đổi giá trị mặc định của chỉ số TTL từ 128 xuống 64.
 
 ---
 

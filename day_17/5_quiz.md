@@ -9,72 +9,72 @@ Bộ câu hỏi được thiết kế theo đúng phân phối ma trận yêu c�
 **MỨC ĐỘ: NHẬN BIẾT (4 CÂU)**
 
 **Câu 1:** Trong môi trường mạng máy tính, cấu hình nào sau đây bắt buộc phải được kích hoạt trên Card giao tiếp mạng (NIC) của kẻ tấn công để hệ thống chấp nhận và chuyển lên các tầng trên xử lý toàn bộ các gói tin di chuyển qua đường truyền, bất kể địa chỉ MAC đích là gì?
-A. Monitor Mode
-B. Promiscuous Mode
-C. Half-Duplex Mode
-D. Stealth Mode
+* A. Monitor Mode
+* B. Promiscuous Mode
+* C. Half-Duplex Mode
+* D. Stealth Mode
 
 **Câu 2:** Khi một cuộc tấn công "nghe lén" mạng diễn ra một cách hoàn toàn vô hình, kẻ tấn công không gửi thêm bất kỳ gói tin nào vào hệ thống mạng nội bộ mà chỉ thụ động bắt các lưu lượng đang quảng bá (broadcast). Hiện tượng này thường xảy ra trong môi trường hạ tầng sử dụng thiết bị phần cứng nào sau đây?
-A. Managed Switch
-B. Router
-C. Hub
-D. Gateway
+* A. Managed Switch
+* B. Router
+* C. Hub
+* D. Gateway
 
 **Câu 3:** Giao thức nào sau đây truyền tải dữ liệu hoàn toàn dưới dạng văn bản thuần túy (Plaintext), khiến cho thông tin đăng nhập của người quản trị (Username/Password) bị lộ hoàn toàn ngay khi kẻ tấn công thực hiện bắt gói tin bằng Wireshark?
-A. Telnet
-B. SSH
-C. SFTP
-D. HTTPS
+* A. Telnet
+* B. SSH
+* C. SFTP
+* D. HTTPS
 
 **Câu 4:** Để giảm thiểu tối đa rủi ro bị nghe lén dữ liệu truyền tải trên môi trường Web, doanh nghiệp được khuyến nghị đồng loạt chuyển đổi và thay thế hoàn toàn giao thức HTTP truyền thống sang giao thức bảo mật nào sau đây?
-A. SMTP
-B. SNMP
-C. FTP
-D. HTTPS
+* A. SMTP
+* B. SNMP
+* C. FTP
+* D. HTTPS
 
 ---
 
 **MỨC ĐỘ: THÔNG HIỂU (3 CÂU)**
 
 **Câu 5:** Tại sao kỹ thuật Tấn công Sniffing bị động (Passive Sniffing) hầu như không thể bị phát hiện bởi các hệ thống giám sát an ninh mạng truyền thống (như IDS hay Firewall)?
-A. Vì card mạng của hacker lúc này đã tự động ẩn địa chỉ IP và địa chỉ MAC vật lý.
-B. Vì các gói tin chạy qua HUB được nhân bản bằng phần cứng nên không làm thay đổi hay tiêu hao lưu lượng đường truyền.
-C. Vì hacker không phát tán hay can thiệp bất kỳ gói tin lạ nào vào lưu lượng chung của mạng.
-D. Vì bộ lọc của hệ thống IDS mặc định bỏ qua toàn bộ lưu lượng dữ liệu dạng quảng bá (Broadcast).
+* A. Vì card mạng của hacker lúc này đã tự động ẩn địa chỉ IP và địa chỉ MAC vật lý.
+* B. Vì các gói tin chạy qua HUB được nhân bản bằng phần cứng nên không làm thay đổi hay tiêu hao lưu lượng đường truyền.
+* C. Vì hacker không phát tán hay can thiệp bất kỳ gói tin lạ nào vào lưu lượng chung của mạng.
+* D. Vì bộ lọc của hệ thống IDS mặc định bỏ qua toàn bộ lưu lượng dữ liệu dạng quảng bá (Broadcast).
 
 **Câu 6:** Điểm khác biệt cốt lõi về mặt cơ chế vận hành giữa Active Sniffing (Sniffing chủ động) và Passive Sniffing (Sniffing bị động) trong hạ tầng mạng là gì?
-A. Active Sniffing chỉ bắt được gói tin ở tầng Network (Tầng 3), còn Passive Sniffing bắt được ở tầng Data Link (Tầng 2).
-B. Active Sniffing đòi hỏi hacker phải gửi các gói tin giả mạo để thao túng bảng định tuyến/chuyển mạch của thiết bị, trong khi Passive Sniffing chỉ việc nhận dữ liệu tự động đổ về.
-C. Active Sniffing chỉ thực hiện được trên mạng không dây (Wi-Fi), còn Passive Sniffing chỉ áp dụng cho mạng dây truyền thống.
-D. Active Sniffing có khả năng tự động giải mã các gói tin mã hóa SSL/TLS, còn Passive Sniffing thì không thể.
+* A. Active Sniffing chỉ bắt được gói tin ở tầng Network (Tầng 3), còn Passive Sniffing bắt được ở tầng Data Link (Tầng 2).
+* B. Active Sniffing đòi hỏi hacker phải gửi các gói tin giả mạo để thao túng bảng định tuyến/chuyển mạch của thiết bị, trong khi Passive Sniffing chỉ việc nhận dữ liệu tự động đổ về.
+* C. Active Sniffing chỉ thực hiện được trên mạng không dây (Wi-Fi), còn Passive Sniffing chỉ áp dụng cho mạng dây truyền thống.
+* D. Active Sniffing có khả năng tự động giải mã các gói tin mã hóa SSL/TLS, còn Passive Sniffing thì không thể.
 
 **Câu 7:** Một quản trị viên hệ thống bật công cụ Wireshark trên máy tính cá nhân để rà soát lỗi ứng dụng và thấy rất nhiều gói tin của các máy tính khác trong cùng phòng ban đổ về máy mình. Nguyên nhân sâu xa nào dẫn tới hiện tượng mạng này?
-A. Máy tính của quản trị viên đang bị nhiễm mã độc Trojan điều khiển từ xa.
-B. Hạ tầng mạng nội bộ của phòng ban này đang kết nối tập trung qua một thiết bị HUB cũ hoặc Switch bị lỗi chuyển thành HUB.
-C. Tường lửa (Firewall) trên máy tính của quản trị viên đã bị tắt hoàn toàn.
-D. Do giao thức HTTPS trên các máy trạm khác đang bị lỗi chứng chỉ bảo mật (SSL Certificate).
+* A. Máy tính của quản trị viên đang bị nhiễm mã độc Trojan điều khiển từ xa.
+* B. Hạ tầng mạng nội bộ của phòng ban này đang kết nối tập trung qua một thiết bị HUB cũ hoặc Switch bị lỗi chuyển thành HUB.
+* C. Tường lửa (Firewall) trên máy tính của quản trị viên đã bị tắt hoàn toàn.
+* D. Do giao thức HTTPS trên các máy trạm khác đang bị lỗi chứng chỉ bảo mật (SSL Certificate).
 
 ---
 
 **MỨC ĐỘ: VẬN DỤNG (3 CÂU)**
 
 **Câu 8:** Một kỹ sư an ninh mạng đang xây dựng một phòng thí nghiệm cô lập (Malware Lab) trên máy ảo VMware để phân tích hành vi của một mẫu mã độc Trojan. Thao tác nào sau đây đối với card mạng máy ảo là chuẩn xác nhất để vừa có thể dùng Wireshark bắt gói tin phân tích kết nối ngầm của mã độc, vừa đảm bảo an toàn tuyệt đối cho máy thật (Host) và mạng doanh nghiệp?
-A. Cấu hình card mạng sang chế độ Bridged để máy ảo nhận IP trực tiếp từ Router thật.
-B. Cấu hình card mạng sang chế độ Host-Only (hoặc NAT Network cô lập) và ngắt kết nối với mạng LAN thật.
-C. Bật chế độ Promiscuous Mode trên card mạng của máy thật để theo dõi máy ảo.
-D. Chia sẻ chung thư mục dữ liệu (Shared Folders) giữa máy thật và máy ảo đang chạy mã độc.
+* A. Cấu hình card mạng sang chế độ Bridged để máy ảo nhận IP trực tiếp từ Router thật.
+* B. Cấu hình card mạng sang chế độ Host-Only (hoặc NAT Network cô lập) và ngắt kết nối với mạng LAN thật.
+* C. Bật chế độ Promiscuous Mode trên card mạng của máy thật để theo dõi máy ảo.
+* D. Chia sẻ chung thư mục dữ liệu (Shared Folders) giữa máy thật và máy ảo đang chạy mã độc.
 
 **Câu 9:** Bạn đến một quán cà phê và kết nối vào mạng Wi-Fi công cộng có đặt mật khẩu bảo mật chuẩn WPA2. Bạn cần đăng nhập vào tài khoản quản trị hệ thống của công ty nhưng phát hiện website quản trị chỉ hỗ trợ giao thức kết nối `http://`. Hành động nào sau đây giúp bạn bảo vệ tài khoản của mình an toàn nhất trước nguy cơ bị Sniffing?
-A. Yên tâm đăng nhập vì mạng Wi-Fi của quán đã được bảo vệ bằng mật khẩu WPA2 nên không ai nghe lén được.
-B. Sử dụng một dịch vụ VPN đáng tin cậy để mã hóa toàn bộ lưu lượng mạng trước khi thực hiện đăng nhập vào trang web HTTP đó.
-C. Chuyển trình duyệt sang chế độ ẩn danh (Incognito Mode) để hacker không thể bắt được Cookie phiên làm việc.
-D. Đổi mật khẩu tài khoản của mình thành chuỗi ký tự cực kỳ dài và phức tạp trước khi bấm nút đăng nhập qua HTTP.
+* A. Yên tâm đăng nhập vì mạng Wi-Fi của quán đã được bảo vệ bằng mật khẩu WPA2 nên không ai nghe lén được.
+* B. Sử dụng một dịch vụ VPN đáng tin cậy để mã hóa toàn bộ lưu lượng mạng trước khi thực hiện đăng nhập vào trang web HTTP đó.
+* C. Chuyển trình duyệt sang chế độ ẩn danh (Incognito Mode) để hacker không thể bắt được Cookie phiên làm việc.
+* D. Đổi mật khẩu tài khoản của mình thành chuỗi ký tự cực kỳ dài và phức tạp trước khi bấm nút đăng nhập qua HTTP.
 
 **Câu 10:** Trong vai trò là Chuyên gia kiểm thử xâm nhập (Ethical Hacker) được thuê để đánh giá an ninh mạng nội bộ cho một tổ chức, sau khi kết nối máy tính Kali Linux vào một cổng Switch của công ty, bạn nhận thấy Switch cấu hình bảo mật rất chặt nên không thể dùng Passive Sniffing. Bạn nên triển khai bước đi tiếp theo nào để kiểm thử khả năng bắt gói tin thu thập thông tin?
-A. Gửi liên tiếp các gói tin ICMP Echo Request (Ping) dung lượng lớn để làm sập Switch.
-B. Chuyển card mạng sang Monitor Mode để ép Switch phải gửi toàn bộ gói tin sang máy mình.
-C. Sử dụng công cụ để thực hiện đòn tấn công Active Sniffing thông qua kỹ thuật giả mạo/đầu độc gói tin ARP (ARP Spoofing).
-D. Báo cáo ngay với doanh nghiệp rằng hệ thống mạng nội bộ của họ đã an toàn tuyệt đối và không thể bị nghe lén.
+* A. Gửi liên tiếp các gói tin ICMP Echo Request (Ping) dung lượng lớn để làm sập Switch.
+* B. Chuyển card mạng sang Monitor Mode để ép Switch phải gửi toàn bộ gói tin sang máy mình.
+* C. Sử dụng công cụ để thực hiện đòn tấn công Active Sniffing thông qua kỹ thuật giả mạo/đầu độc gói tin ARP (ARP Spoofing).
+* D. Báo cáo ngay với doanh nghiệp rằng hệ thống mạng nội bộ của họ đã an toàn tuyệt đối và không thể bị nghe lén.
 
 ---
 

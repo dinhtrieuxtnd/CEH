@@ -10,7 +10,7 @@ Dưới đây là bộ quiz trắc nghiệm gồm 10 câu hỏi bám sát nội 
 * B. Cross-Site Scripting (XSS)
 * C. IP Spoofing
 * D. RST Packet Injection
-* **Đáp án đúng:** B
+**Đáp án đúng:** B
 * **Giải thích:** * *Tại sao đúng:* Tấn công XSS cho phép kẻ tấn công chèn mã JavaScript độc hại vào trình duyệt nạn nhân để đọc giá trị Cookie (`document.cookie`), đây là thành phần thuộc lớp ứng dụng (HTTP/HTTPS).
 * *Tại sao các đáp án khác sai:* A, C, D đều là các kỹ thuật can thiệp sâu vào các gói tin TCP/IP, cấu trúc gói hoặc địa chỉ IP, do đó chúng thuộc về Tầng Mạng (Network Level).
 
@@ -22,7 +22,7 @@ Dưới đây là bộ quiz trắc nghiệm gồm 10 câu hỏi bám sát nội 
 * B. SameSite=Strict
 * C. HttpOnly
 * D. Path=/
-* **Đáp án đúng:** C
+**Đáp án đúng:** C
 * **Giải thích:**
 * *Tại sao đúng:* Cờ `HttpOnly` là cơ chế bảo mật phía trình duyệt, khi được kích hoạt, nó cấm hoàn toàn mọi tập lệnh client-side (như JavaScript) đọc nội dung của Cookie đó, chặn đứng nguy cơ lộ mã phiên qua XSS.
 * *Tại sao các đáp án khác sai:* A (Secure) chỉ ép buộc truyền cookie qua HTTPS; B (SameSite) chống tấn công CSRF; D (Path) giới hạn phạm vi đường dẫn gửi kèm cookie chứ không chặn JavaScript.
@@ -35,7 +35,7 @@ Dưới đây là bộ quiz trắc nghiệm gồm 10 câu hỏi bám sát nội 
 * B. Ép buộc hoặc dụ dỗ nạn nhân đăng nhập bằng một mã Session ID đã được kẻ tấn công biết hoặc khởi tạo từ trước.
 * C. Gửi liên tiếp các gói tin RST để ngắt kết nối hợp lệ giữa client và server.
 * D. Nghe lén lưu lượng mạng không mã hóa bằng công cụ Wireshark để chụp lại Cookie.
-* **Đáp án đúng:** B
+**Đáp án đúng:** B
 * **Giải thích:**
 * *Tại sao đúng:* Bản chất của Session Fixation là kẻ tấn công đã chọn sẵn một mã Session ID (ví dụ thông qua một đường link lừa đảo), lừa nạn nhân đăng nhập qua mã đó để máy chủ kích hoạt phiên hợp lệ cho mã có sẵn này.
 * *Tại sao các đáp án khác sai:* A là kỹ thuật thuộc TCP Hijacking; C là kỹ thuật ngắt phiên (Session Desynchronization); D là tấn công Sniffing thụ động thông thường.
@@ -48,7 +48,7 @@ Dưới đây là bộ quiz trắc nghiệm gồm 10 câu hỏi bám sát nội 
 * B. Trình duyệt tự động xóa lịch sử truy cập ngay sau khi người dùng đóng tab.
 * C. Máy chủ xử lý mỗi yêu cầu (Request) một cách độc lập và không lưu giữ ký ức hay thông tin về các yêu cầu trước đó của cùng một client.
 * D. Máy chủ không thể ghi lại địa chỉ IP nguồn của các gói tin gửi đến.
-* **Đáp án đúng:** C
+**Đáp án đúng:** C
 * **Giải thích:**
 * *Tại sao đúng:* Stateless nghĩa là không giữ trạng thái. Mỗi chu kỳ Request/Response của HTTP hoàn toàn biệt lập, máy chủ không tự nhận diện được client vừa gửi request trước đó nếu không có cơ chế Session/Cookie hỗ trợ.
 * *Tại sao các đáp án khác sai:* Các phương án A, B, D đều mô tả sai định nghĩa kỹ thuật của thuộc tính "Stateless" trong kiến trúc mạng và Web.
@@ -65,7 +65,7 @@ Dưới đây là bộ quiz trắc nghiệm gồm 10 câu hỏi bám sát nội 
 * B. Vì HTTPS chỉ mã hóa dữ liệu trên đường truyền; nếu ứng dụng bị dính lỗi XSS, kẻ tấn công vẫn lấy được Cookie trực tiếp từ bộ nhớ trình duyệt của nạn nhân.
 * C. Vì HTTPS chỉ bảo vệ được hệ điều hành Linux chứ không bảo vệ được hệ điều hành Windows.
 * D. Vì chứng chỉ HTTPS (SSL) dễ dàng bị bypass bằng các công cụ quét cổng như Nmap.
-* **Đáp án đúng:** B
+**Đáp án đúng:** B
 * **Giải thích:**
 * *Tại sao đúng:* HTTPS bảo vệ dữ liệu chống lại việc nghe lén trên đường truyền (Sniffing mạng). Tuy nhiên, nếu mã nguồn web có lỗ hổng XSS, mã độc chạy trực tiếp ngay trong trình duyệt của nạn nhân (nơi dữ liệu đã được giải mã), cho phép lấy Session ID mà không cần chặn bắt trên mạng.
 * *Tại sao các đáp án khác sai:* A sai vì HTTPS hoạt động ở tầng ứng dụng/vận chuyển; C và D hoàn toàn sai kiến thức cơ bản về hệ điều hành và mật mã học.
@@ -78,7 +78,7 @@ Dưới đây là bộ quiz trắc nghiệm gồm 10 câu hỏi bám sát nội 
 * B. Để vượt qua cơ chế xác thực sinh trắc học của thiết bị di động.
 * C. Để chế tạo một gói tin giả mạo có số thứ tự khớp với tiến trình mong đợi của máy chủ, từ đó chèn lệnh độc hại trước khi gói tin thật của nạn nhân tới đích.
 * D. Để làm tràn ngập bộ nhớ đệm (Buffer Overflow) của thiết bị Switch.
-* **Đáp án đúng:** C
+**Đáp án đúng:** C
 * **Giải thích:**
 * *Tại sao đúng:* Giao thức TCP dựa vào Sequence Number để sắp xếp các gói tin và xác thực luồng truyền. Nếu hacker đoán được số này, hắn có thể gửi gói tin giả mạo có số SEQ hợp lệ, máy chủ sẽ tin tưởng tiếp nhận gói tin này và bỏ qua gói tin thật đến sau.
 * *Tại sao các đáp án khác sai:* A sai vì Sequence Number không dùng để mã hóa hay giải mã dữ liệu; B và D không liên quan đến bản chất hoạt động của giao thức TCP 3-Way Handshake.
@@ -91,7 +91,7 @@ Dưới đây là bộ quiz trắc nghiệm gồm 10 câu hỏi bám sát nội 
 * B. Vì nếu Session ID không bị hủy (invalidate) trong cơ sở dữ liệu/bộ nhớ phía Máy chủ (Server-side), kẻ tấn công đã đánh cắp được mã này từ trước vẫn có thể sử dụng lại nó để truy cập tài khoản thành công.
 * C. Vì cơ chế xóa cookie chỉ hoạt động trên trình duyệt Chrome, không có tác dụng trên Firefox.
 * D. Vì xóa cookie sẽ khiến máy tính của người dùng bị nhiễm mã độc mã nguồn mở.
-* **Đáp án đúng:** B
+**Đáp án đúng:** B
 * **Giải thích:**
 * *Tại sao đúng:* Việc quản lý phiên an toàn bắt buộc phải thực hiện ở cả hai phía. Nếu chỉ xóa cookie ở client (bề nổi) mà server vẫn coi mã Session ID đó là hợp lệ, thì chiếc "thẻ thông hành" đó vẫn sống và hacker vẫn dùng được.
 * *Tại sao các đáp án khác sai:* A, C, D đều là các nhận định chủ quan, không đúng với thực tế vận hành kỹ thuật của cookie và trình duyệt.
@@ -108,7 +108,7 @@ Dưới đây là bộ quiz trắc nghiệm gồm 10 câu hỏi bám sát nội 
 * B. Sử dụng một trình duyệt khác, chèn chuỗi `SESSION_ID=abc123XYZ` vào phần Cookie lưu trữ và F5 lại trang web để truy cập thẳng vào trang quản trị tài khoản mà không cần nhập OTP.
 * C. Gọi điện cho khách hàng để lừa họ đọc mã OTP vừa gửi về điện thoại.
 * D. Tiến hành tấn công Từ chối dịch vụ (DDoS) vào máy chủ ngân hàng để ép hệ thống tự động nhả quyền truy cập.
-* **Đáp án đúng:** B
+**Đáp án đúng:** B
 * **Giải thích:**
 * *Tại sao đúng:* Session Hijacking xảy ra **sau khi** quá trình xác thực hoàn tất. Khách hàng đã nhập đúng mật khẩu và OTP, máy chủ đã cấp Session ID hợp lệ. Khi hacker cầm được Session ID này và chèn vào trình duyệt của mình, máy chủ sẽ nhận diện hacker chính là khách hàng đó và cho phép truy cập mà không hỏi lại OTP.
 * *Tại sao các đáp án khác sai:* A không cần thiết vì cướp phiên giúp bỏ qua mật khẩu; C là Social Engineering chứ không phải kỹ thuật cướp phiên; D phá hoại hệ thống và vi phạm đạo đức kiểm thử.
@@ -121,7 +121,7 @@ Dưới đây là bộ quiz trắc nghiệm gồm 10 câu hỏi bám sát nội 
 * B. Lập trình viên đã tự viết thuật toán tạo Session ID theo quy luật dễ đoán (Session Prediction); giải pháp là chuyển sang sử dụng thư viện chuẩn của hệ thống để sinh mã phiên ngẫu nhiên mật mã học (Cryptographically Secure Random String).
 * C. Do người dùng đặt mật khẩu quá ngắn; giải pháp là ép buộc người dùng đổi mật khẩu có ký tự đặc biệt.
 * D. Do hệ thống tường lửa (Firewall) cấu hình sai cổng; giải pháp là đóng cổng 443.
-* **Đáp án đúng:** B
+**Đáp án đúng:** B
 * **Giải thích:**
 * *Tại sao đúng:* Cấu trúc mã phiên trong tình huống hiển thị rõ quy luật (`TênUser_NgàyTháng_SốThứTự`). Kẻ tấn công không cần dùng mã độc hay nghe lén, chúng chỉ cần chạy một tập lệnh tự động tăng số thứ tự là tự dò ra (Brute-force/Predict) Session ID của người khác.
 * *Tại sao các đáp án khác sai:* A, C, D đều đoán mò sai nguyên nhân gốc rễ kỹ thuật của bài toán (Cấu trúc mã phiên yếu).
@@ -134,7 +134,7 @@ Dưới đây là bộ quiz trắc nghiệm gồm 10 câu hỏi bám sát nội 
 * B. Mã định danh trên URL sẽ bị lộ lọt dễ dàng thông qua lịch sử trình duyệt (Browser History), nhật ký máy chủ (Server Logs), hoặc thông qua tiêu đề `Referer` khi người dùng bấm vào một liên kết ngoài.
 * C. URL có chứa ký tự đặc biệt sẽ bị các phần mềm diệt virus trên máy người dùng tự động xóa bỏ.
 * D. Giao thức HTTPS không hỗ trợ mã hóa các tham số truyền trên URL.
-* **Đáp án đúng:** B
+**Đáp án đúng:** B
 * **Giải thích:**
 * *Tại sao đúng:* Đây là sai lầm kinh điển. URL luôn bị lưu lại ở rất nhiều nơi: lịch sử duyệt web của máy khách, log của proxy công ty, log của web server. Nếu đưa Session ID lên URL, bất kỳ ai xem log hoặc nhìn vào màn hình nạn nhân đều có thể cướp được phiên làm việc.
 * *Tại sao các đáp án khác sai:* A và C phóng đại không có căn cứ kỹ thuật; D sai vì HTTPS mã hóa toàn bộ gói tin bao gồm cả chuỗi truy vấn (Query String) trên URL khi truyền qua mạng (nhưng không bảo vệ được dữ liệu khi đã nằm trong log hoặc lịch sử trình duyệt).

@@ -9,72 +9,113 @@ Dưới đây là bộ quiz 10 câu trắc nghiệm hoàn chỉnh cho nội dung
 ### MỨC ĐỘ 1: NHẬN BIẾT (4 CÂU)
 
 **Câu 1: Mục tiêu cốt lõi của một cuộc tấn công Từ chối dịch vụ (DoS/DDoS) nhắm vào thành phần nào trong mô hình an toàn thông tin CIA Triad?**
-A. Tính bảo mật (Confidentiality).
-B. Tính toàn vẹn (Integrity).
-C. Tính sẵn sàng (Availability).
-D. Tính chống chối bỏ (Non-repudiation).
+
+* A. Tính bảo mật (Confidentiality).
+
+* B. Tính toàn vẹn (Integrity).
+
+* C. Tính sẵn sàng (Availability).
+
+* D. Tính chống chối bỏ (Non-repudiation).
 
 **Câu 2: Thuật ngữ nào sau đây được dùng để chỉ một máy tính hoặc thiết bị thông minh bị nhiễm mã độc ngầm, mất quyền kiểm soát hoàn toàn và trở thành một công cụ tham gia tấn công DDoS theo lệnh của hacker?**
-A. Botmaster.
-B. Zombie (hoặc Bot).
-C. C&C Server.
-D. Honeypot.
+
+* A. Botmaster.
+
+* B. Zombie (hoặc Bot).
+
+* C. C&C Server.
+
+* D. Honeypot.
 
 **Câu 3: Đòn tấn công nào lợi dụng quy trình bắt tay 3 bước (3-way handshake) của giao thức TCP bằng cách gửi liên tục gói tin khởi tạo nhưng cố tình im lặng, không gửi gói tin xác nhận cuối cùng?**
-A. SYN Flood.
-B. UDP Flood.
-C. ICMP Flood.
-D. HTTP Flood.
+
+* A. SYN Flood.
+
+* B. UDP Flood.
+
+* C. ICMP Flood.
+
+* D. HTTP Flood.
 
 **Câu 4: Khi hacker sử dụng một mạng lưới gồm hàng vạn thiết bị ma (Botnet) nằm rải rác trên toàn cầu để đồng loạt dội bom lưu lượng rác vào một máy chủ duy nhất, cuộc tấn công này được phân loại chính xác là gì?**
-A. Tấn công DoS (Denial of Service).
-B. Tấn công Phishing (Lừa đảo).
-C. Tấn công DDoS (Distributed Denial of Service).
-D. Tấn công Sniffing (Nghe lén).
+
+* A. Tấn công DoS (Denial of Service).
+
+* B. Tấn công Phishing (Lừa đảo).
+
+* C. Tấn công DDoS (Distributed Denial of Service).
+
+* D. Tấn công Sniffing (Nghe lén).
 
 ---
 
 ### MỨC ĐỘ 2: THÔNG HIỂU (3 CÂU)
 
 **Câu 5: Trong một cuộc tấn công UDP Flood, cơ chế nào sau đây là nguyên nhân chính trực tiếp khiến CPU của máy chủ mục tiêu bị quá tải và rơi vào trạng thái tê liệt?**
-A. Máy chủ phải tiêu tốn toàn bộ bộ nhớ đệm để duy trì trạng thái "chờ bắt tay" với các cổng.
-B. Máy chủ liên tục phải rà soát ứng dụng đứng sau cổng, phát hiện cổng đóng và tốn tài nguyên sinh ra gói tin lỗi ICMP Destination Unreachable gửi ngược lại.
-C. Giao thức UDP bẻ gãy khóa mã hóa SSL/TLS của máy chủ, buộc hệ thống phải khởi động lại liên tục.
-D. Đường truyền Internet bị chiếm dụng bởi các tệp tin dữ liệu có kích thước vượt quá giới hạn băng thông vật lý của card mạng.
+
+* A. Máy chủ phải tiêu tốn toàn bộ bộ nhớ đệm để duy trì trạng thái "chờ bắt tay" với các cổng.
+
+* B. Máy chủ liên tục phải rà soát ứng dụng đứng sau cổng, phát hiện cổng đóng và tốn tài nguyên sinh ra gói tin lỗi ICMP Destination Unreachable gửi ngược lại.
+
+* C. Giao thức UDP bẻ gãy khóa mã hóa SSL/TLS của máy chủ, buộc hệ thống phải khởi động lại liên tục.
+
+* D. Đường truyền Internet bị chiếm dụng bởi các tệp tin dữ liệu có kích thước vượt quá giới hạn băng thông vật lý của card mạng.
 
 **Câu 6: Điểm khác biệt cốt lõi giữa đòn tấn công DDoS tầng Hạ tầng (Volumetric Attack - Layer 3/4) và tấn công DDoS tầng Ứng dụng (Application Layer Attack - Layer 7) là gì?**
-A. Tấn công Layer 3/4 nhắm vào lỗ hổng mã nguồn của trang web, còn Layer 7 nhắm vào thiết bị Router phần cứng.
-B. Tấn công Layer 3/4 tìm cách làm nghẽn băng thông mạng bằng lưu lượng khổng lồ, còn Layer 7 giả lập hành vi người dùng thật để làm cạn kiệt tài nguyên xử lý (RAM/CPU) của máy chủ thông qua các yêu cầu dịch vụ nặng.
-C. Tấn công Layer 7 luôn đi kèm hành vi ăn cắp cơ sở dữ liệu (Database), còn Layer 3/4 thì không.
-D. Tấn công Layer 3/4 rất khó bị phát hiện trên biểu đồ giám sát mạng, trong khi Layer 7 hiển thị lưu lượng tăng đột biến hàng Terabit rất rõ ràng.
+
+* A. Tấn công Layer 3/4 nhắm vào lỗ hổng mã nguồn của trang web, còn Layer 7 nhắm vào thiết bị Router phần cứng.
+
+* B. Tấn công Layer 3/4 tìm cách làm nghẽn băng thông mạng bằng lưu lượng khổng lồ, còn Layer 7 giả lập hành vi người dùng thật để làm cạn kiệt tài nguyên xử lý (RAM/CPU) của máy chủ thông qua các yêu cầu dịch vụ nặng.
+
+* C. Tấn công Layer 7 luôn đi kèm hành vi ăn cắp cơ sở dữ liệu (Database), còn Layer 3/4 thì không.
+
+* D. Tấn công Layer 3/4 rất khó bị phát hiện trên biểu đồ giám sát mạng, trong khi Layer 7 hiển thị lưu lượng tăng đột biến hàng Terabit rất rõ ràng.
 
 **Câu 7: Giải pháp Reverse Proxy (như Cloudflare) bảo vệ máy chủ thật đứng sau khỏi các đòn tấn công DDoS dồn dập bằng cơ chế cốt lõi nào?**
-A. Nó tự động ngắt kết nối Internet của toàn bộ mạng nội bộ khi phát hiện lưu lượng tăng cao.
-B. Nó đứng ra làm trung gian tiếp nhận toàn bộ lưu lượng, ẩn địa chỉ IP thật của máy chủ đích, và sử dụng hạ tầng đám mây khổng lồ để phân tích, lọc bỏ kết nối rác trước khi chuyển tiếp người dùng thật vào trong.
-C. Nó tiến hành mã hóa toàn bộ dữ liệu ổ cứng máy chủ thành định dạng không thể đọc được đối với Botnet.
-D. Nó tự động gửi các gói tin tấn công ngược trở lại (Counter-attack) máy tính của hacker để làm sập nguồn đội quân Zombie.
+
+* A. Nó tự động ngắt kết nối Internet của toàn bộ mạng nội bộ khi phát hiện lưu lượng tăng cao.
+
+* B. Nó đứng ra làm trung gian tiếp nhận toàn bộ lưu lượng, ẩn địa chỉ IP thật của máy chủ đích, và sử dụng hạ tầng đám mây khổng lồ để phân tích, lọc bỏ kết nối rác trước khi chuyển tiếp người dùng thật vào trong.
+
+* C. Nó tiến hành mã hóa toàn bộ dữ liệu ổ cứng máy chủ thành định dạng không thể đọc được đối với Botnet.
+
+* D. Nó tự động gửi các gói tin tấn công ngược trở lại (Counter-attack) máy tính của hacker để làm sập nguồn đội quân Zombie.
 
 ---
 
 ### MỨC ĐỘ 3: VẬN DỤNG (3 CÂU GIẢI QUYẾT TÌNH HUỐNG)
 
-**Câu 8: Website của một doanh nghiệp vừa tung ra chương trình "Săn Sale 0 đồng" vào đúng 12h đêm. Ngay lập tức, website bị nghẽn mạng nghiêm trọng, người dùng nhận thông báo "504 Gateway Timeout". Hệ thống giám sát cho thấy lưu lượng truy cập cao gấp 200 lần ngày thường nhưng phân bổ đều từ khách hàng thật đang bấm F5 liên tục. Người quản trị mạng cần kết luận và xử lý tình huống này như thế nào?**
-A. Đây là một cuộc tấn công DDoS bằng Botnet xuyên quốc gia, lập tức kích hoạt tường lửa chặn toàn bộ các địa chỉ IP truy cập.
-B. Đây là hiện tượng quá tải tự nhiên (Flash Crowd), không phải tấn công DDoS. Cần sử dụng giải pháp hàng đợi (Queue), cân bằng tải (Load Balancing) và tối ưu hạ tầng để điều phối khách hàng thay vì chặn IP.
-C. Hệ thống đã bị nhiễm mã độc tống tiền Ransomware, cần tắt nguồn toàn bộ máy chủ để cô lập.
-D. Hacker đang thực hiện đòn tấn công ICMP Flood, cần cấu hình tường lửa khóa hoàn toàn giao thức TCP của hệ thống.
+**Câu 8: Website của một doanh nghiệp vừa tung ra chương trình "Săn Sale 0 đồng" vào đúng 12h đêm. Ngay lập tức, website bị nghẽn mạng nghiêm trọng, người dùng nhận thông báo "504 Gateway Timeout". Hệ thống giám sát cho thấy lưu lượng truy cập cao gấp 200 lần ngày thường nhưng phân bổ đều từ khách hàng thật đang bấm F5 liên tụ
+c. Người quản trị mạng cần kết luận và xử lý tình huống này như thế nào?**
+
+* A. Đây là một cuộc tấn công DDoS bằng Botnet xuyên quốc gia, lập tức kích hoạt tường lửa chặn toàn bộ các địa chỉ IP truy cập.
+
+* B. Đây là hiện tượng quá tải tự nhiên (Flash Crowd), không phải tấn công DDoS. Cần sử dụng giải pháp hàng đợi (Queue), cân bằng tải (Load Balancing) và tối ưu hạ tầng để điều phối khách hàng thay vì chặn IP.
+
+* C. Hệ thống đã bị nhiễm mã độc tống tiền Ransomware, cần tắt nguồn toàn bộ máy chủ để cô lập.
+
+* D. Hacker đang thực hiện đòn tấn công ICMP Flood, cần cấu hình tường lửa khóa hoàn toàn giao thức TCP của hệ thống.
 
 **Câu 9: Trong quá trình rà quét an ninh định kỳ cho hệ thống máy chủ dịch vụ của một ngân hàng, một Ethical Hacker phát hiện ra các cổng dịch vụ DNS (53), NTP (123) đang mở toang ra môi trường Internet công cộng mặc dù ngân hàng không hề có nhu cầu làm máy chủ phân giải tên miền công cộng. Chuyên gia bảo mật này nên đưa ra khuyến nghị gì để ngăn chặn nguy cơ tiềm ẩn liên quan đến DDoS?**
-A. Giữ nguyên cấu hình để đảm bảo tính sẵn sàng cao cho nhân viên truy cập từ xa.
-B. Nâng cấp băng thông đường truyền Internet của ngân hàng lên gấp đôi để phòng hờ.
-C. Khuyến nghị đóng ngay các cổng này hoặc cấu hình tường lửa chỉ cho phép các IP nội bộ cụ thể truy cập, nhằm tránh việc hệ thống bị hacker lợi dụng làm bệ phóng khuếch đại tấn công DDoS (Amplification Attack) nhắm vào nạn nhân khác.
-D. Cài đặt thêm phần mềm diệt virus Windows Defender trên các máy trạm của nhân viên kế toán.
+
+* A. Giữ nguyên cấu hình để đảm bảo tính sẵn sàng cao cho nhân viên truy cập từ xa.
+
+* B. Nâng cấp băng thông đường truyền Internet của ngân hàng lên gấp đôi để phòng hờ.
+
+* C. Khuyến nghị đóng ngay các cổng này hoặc cấu hình tường lửa chỉ cho phép các IP nội bộ cụ thể truy cập, nhằm tránh việc hệ thống bị hacker lợi dụng làm bệ phóng khuếch đại tấn công DDoS (Amplification Attack) nhắm vào nạn nhân khác.
+
+* D. Cài đặt thêm phần mềm diệt virus Windows Defender trên các máy trạm của nhân viên kế toán.
 
 **Câu 10: Website của một cơ quan chính phủ bất ngờ bị tê liệt hoàn toàn. Kiểm tra băng thông mạng đường truyền thấy vẫn rất trống trải, lưu lượng mạng ở mức thấp. Tuy nhiên, log của máy chủ web (Nginx) ghi nhận có hàng trăm địa chỉ IP liên tục gửi yêu cầu (Request) lặp đi lặp lại vào tính năng "Tìm kiếm văn bản pháp luật nâng cao có lồng ghép nhiều bảng dữ liệu (Join Query)". CPU của máy chủ cơ sở dữ liệu (Database) luôn treo ở mức 100%. Đây là dấu hiệu của loại tấn công nào và cách xử lý phù hợp nhất là gì?**
-A. Đây là tấn công ICMP Flood tầng mạng; xử lý bằng cách chặn hoàn toàn lệnh Ping trên tường lửa.
-B. Đây là tấn công SYN Flood lợi dụng bắt tay TCP; xử lý bằng cách tăng kích thước hàng chờ SYN (SYN Queue).
-C. Đây là tấn công HTTP Flood nhắm vào tầng Ứng dụng (Layer 7); xử lý bằng cách cấu hình giới hạn tần suất (Rate Limiting) trên Nginx, tối ưu câu lệnh truy vấn Database hoặc bật màng lọc CAPTCHA đối với tính năng tìm kiếm.
-D. Đây là hiện tượng đứt cáp quang biển quốc tế; cần liên hệ nhà mạng ISP để chuyển hướng đường truyền dữ liệu.
+
+* A. Đây là tấn công ICMP Flood tầng mạng; xử lý bằng cách chặn hoàn toàn lệnh Ping trên tường lửa.
+
+* B. Đây là tấn công SYN Flood lợi dụng bắt tay TCP; xử lý bằng cách tăng kích thước hàng chờ SYN (SYN Queue).
+
+* C. Đây là tấn công HTTP Flood nhắm vào tầng Ứng dụng (Layer 7); xử lý bằng cách cấu hình giới hạn tần suất (Rate Limiting) trên Nginx, tối ưu câu lệnh truy vấn Database hoặc bật màng lọc CAPTCHA đối với tính năng tìm kiếm.
+
+* D. Đây là hiện tượng đứt cáp quang biển quốc tế; cần liên hệ nhà mạng ISP để chuyển hướng đường truyền dữ liệu.
 
 ---
 
@@ -107,7 +148,8 @@ D. Đây là hiện tượng đứt cáp quang biển quốc tế; cần liên h
 
 * **Câu 3: Chọn A**
 * *Tại sao đúng:* SYN Flood khai thác cạn kiệt tài nguyên bộ nhớ đệm (SYN Backlog Queue) bằng cách gửi liên tục gói tin `SYN` nhưng không phản hồi gói `ACK` cuối cùng để hoàn tất quy trình bắt tay TCP.
-* *Tại sao các đáp án khác sai:* UDP (B) và ICMP (C) là các giao thức "không kết nối" (Connectionless) nên hoàn toàn không có quy trình bắt tay 3 bước. HTTP Flood (D) chạy ở tầng ứng dụng, giao thức TCP lúc này đã bắt tay thành công rồi.
+* *Tại sao các đáp án khác sai:* UDP (B) và ICMP (C) là các giao thức "không kết nối" (Connectionless) nên hoàn toàn không có quy trình bắt tay 3 bướ
+c. HTTP Flood (D) chạy ở tầng ứng dụng, giao thức TCP lúc này đã bắt tay thành công rồi.
 
 
 * **Câu 4: Chọn C**

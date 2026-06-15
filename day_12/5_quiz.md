@@ -8,91 +8,91 @@ Phân bổ cấp độ: 4 Nhận biết · 3 Thông hiểu · 3 Vận dụng.
 
 **Câu 1 [Nhận biết]:** Trên hệ điều hành Windows, mã băm mật khẩu (Password Hash) của các tài khoản người dùng cục bộ được lưu trữ mặc định trong file nào dưới đây?
 
-A. `C:\Windows\System32\drivers\etc\hosts`
-B. `C:\Windows\System32\config\SAM`
-C. `/etc/shadow`
-D. `C:\Windows\System32\config\AppEvent.evt`
+* A. `C:\Windows\System32\drivers\etc\hosts`
+* B. `C:\Windows\System32\config\SAM`
+* C. `/etc/shadow`
+* D. `C:\Windows\System32\config\AppEvent.evt`
 
 ---
 
 **Câu 2 [Nhận biết]:** Thuật ngữ nào đại diện cho một cơ sở dữ liệu khổng lồ được tính toán băm sẵn trước (Pre-computed hashes) từ hàng tỷ chuỗi ký tự, giúp hacker bẻ khóa ngoại tuyến (Offline) gần như ngay lập tức?
 
-A. Wordlist
-B. Shadow Table
-C. Rainbow Table
-D. Active Directory
+* A. Wordlist
+* B. Shadow Table
+* C. Rainbow Table
+* D. Active Directory
 
 ---
 
 **Câu 3 [Nhận biết]:** Đâu là cơ chế phòng thủ tự động khóa quyền truy cập của một tài khoản trên hệ thống nếu phát hiện có hành vi nhập sai mật khẩu liên tiếp vượt quá số lần quy định?
 
-A. Account Lockout Policy
-B. Password History Enforce
-C. Password Complexity Policy
-D. Multi-Factor Authentication
+* A. Account Lockout Policy
+* B. Password History Enforce
+* C. Password Complexity Policy
+* D. Multi-Factor Authentication
 
 ---
 
 **Câu 4 [Nhận biết]:** Trên hệ điều hành Linux, file nào chỉ cho phép tài khoản tối cao (`root`) mở để quản lý và kiểm tra chuỗi mã băm mã hóa một chiều mật khẩu của người dùng?
 
-A. `/etc/passwd`
-B. `/etc/hosts`
-C. `/etc/shadow`
-D. `/etc/security`
+* A. `/etc/passwd`
+* B. `/etc/hosts`
+* C. `/etc/shadow`
+* D. `/etc/security`
 
 ---
 
 **Câu 5 [Thông hiểu]:** Bản chất cốt lõi của kỹ thuật "Salting" (Thêm muối) trong việc lưu trữ bảo mật cơ sở dữ liệu mật khẩu là gì?
 
-A. Chèn thêm ký tự ngẫu nhiên vào mật khẩu gốc trước khi thực hiện chạy hàm băm toán học để triệt tiêu hiệu quả của Rainbow Table.
-B. Sử dụng thuật toán đối xứng cường độ cao để có thể dịch ngược chuỗi băm trở lại văn bản rõ khi cần thiết.
-C. Mã hóa toàn bộ ổ đĩa cứng chứa file cơ sở dữ liệu để ngăn hacker sao chép ngoại tuyến.
-D. Tự động chuyển đổi mật khẩu của người dùng sang dạng chữ Leetspeak (thay ký tự bằng số hoặc ký tự đặc biệt).
+* A. Chèn thêm ký tự ngẫu nhiên vào mật khẩu gốc trước khi thực hiện chạy hàm băm toán học để triệt tiêu hiệu quả của Rainbow Table.
+* B. Sử dụng thuật toán đối xứng cường độ cao để có thể dịch ngược chuỗi băm trở lại văn bản rõ khi cần thiết.
+* C. Mã hóa toàn bộ ổ đĩa cứng chứa file cơ sở dữ liệu để ngăn hacker sao chép ngoại tuyến.
+* D. Tự động chuyển đổi mật khẩu của người dùng sang dạng chữ Leetspeak (thay ký tự bằng số hoặc ký tự đặc biệt).
 
 ---
 
 **Câu 6 [Thông hiểu]:** Tại sao kẻ tấn công (Hacker) luôn tìm mọi cách xâm nhập vào hệ thống để lấy cắp file dữ liệu băm mật khẩu (SAM hoặc Shadow) về máy cục bộ nhằm thực hiện tấn công Offline thay vì tấn công Online trực tiếp tại trang đăng nhập?
 
-A. Vì tấn công Offline sử dụng thuật toán toán học để dịch ngược trực tiếp mã băm toán học sang mật khẩu rõ mà không cần thử sai.
-B. Vì các hệ thống online hiện đại đều có cơ chế Account Lockout (Khóa tài khoản), trong khi tấn công Offline trên máy cục bộ cho phép hacker thử hàng tỷ mật khẩu/giây mà không lo bị phát hiện hay khóa acc.
-C. Vì file SAM và Shadow chứa mật khẩu rõ (Plaintext) của người dùng dưới dạng văn bản không mã hóa.
-D. Vì tấn công Online yêu cầu cấu hình phần cứng máy Kali Linux của hacker mạnh gấp đôi so với tấn công Offline.
+* A. Vì tấn công Offline sử dụng thuật toán toán học để dịch ngược trực tiếp mã băm toán học sang mật khẩu rõ mà không cần thử sai.
+* B. Vì các hệ thống online hiện đại đều có cơ chế Account Lockout (Khóa tài khoản), trong khi tấn công Offline trên máy cục bộ cho phép hacker thử hàng tỷ mật khẩu/giây mà không lo bị phát hiện hay khóa acc.
+* C. Vì file SAM và Shadow chứa mật khẩu rõ (Plaintext) của người dùng dưới dạng văn bản không mã hóa.
+* D. Vì tấn công Online yêu cầu cấu hình phần cứng máy Kali Linux của hacker mạnh gấp đôi so với tấn công Offline.
 
 ---
 
 **Câu 7 [Thông hiểu]:** Điểm khác biệt mấu chốt nhất giữa tấn công Vét cạn (Brute-Force Attack) và tấn công Từ điển (Dictionary Attack) là gì?
 
-A. Brute-Force bẻ khóa online, còn Dictionary bắt buộc phải thực hiện bẻ khóa offline.
-B. Brute-Force dịch ngược hàm băm, còn Dictionary tra cứu bảng băm có sẵn.
-C. Brute-Force tự động sinh và thử lần lượt mọi tổ hợp ký tự toán học có thể có, còn Dictionary chỉ băm và thử các từ ngữ/cụm từ có sẵn trong một file danh bạ (Wordlist).
-D. Brute-Force luôn tìm ra mật khẩu nhanh hơn tấn công Dictionary trong mọi tình huống thực tế.
+* A. Brute-Force bẻ khóa online, còn Dictionary bắt buộc phải thực hiện bẻ khóa offline.
+* B. Brute-Force dịch ngược hàm băm, còn Dictionary tra cứu bảng băm có sẵn.
+* C. Brute-Force tự động sinh và thử lần lượt mọi tổ hợp ký tự toán học có thể có, còn Dictionary chỉ băm và thử các từ ngữ/cụm từ có sẵn trong một file danh bạ (Wordlist).
+* D. Brute-Force luôn tìm ra mật khẩu nhanh hơn tấn công Dictionary trong mọi tình huống thực tế.
 
 ---
 
 **Câu 8 [Vận dụng]:** Bạn là một quản trị viên hệ thống. Người dùng đặt một mật khẩu là `Ad@m123!`. Theo các kiến thức đã học về bẻ khóa, mật khẩu này có an toàn trước các công cụ bẻ khóa hiện đại (như Hashcat hay John the Ripper) hay không? Vì sao?
 
-A. Có, vì nó đã bao gồm chữ hoa, chữ thường, số, ký tự đặc biệt và sử dụng phong cách biến đổi Leetspeak rất khó đoán.
-B. Có, vì thuật toán băm NTLM/SHA-512 sẽ nhận diện đây là mật khẩu phức tạp bậc cao và tự động từ chối bẻ khóa.
-C. Không, vì mật khẩu này quá ngắn (dưới 12 ký tự) và cấu trúc biến đổi ký tự dạng Leetspeak (`a` thành `@`) dễ dàng bị bẻ gãy bởi các bộ quy tắc (Rules) tự động của công cụ hack.
-D. Không, vì hệ thống Windows sẽ tự động lưu mật khẩu này dưới dạng văn bản rõ (Plaintext) trong file hosts.
+* A. Có, vì nó đã bao gồm chữ hoa, chữ thường, số, ký tự đặc biệt và sử dụng phong cách biến đổi Leetspeak rất khó đoán.
+* B. Có, vì thuật toán băm NTLM/SHA-512 sẽ nhận diện đây là mật khẩu phức tạp bậc cao và tự động từ chối bẻ khóa.
+* C. Không, vì mật khẩu này quá ngắn (dưới 12 ký tự) và cấu trúc biến đổi ký tự dạng Leetspeak (`a` thành `@`) dễ dàng bị bẻ gãy bởi các bộ quy tắc (Rules) tự động của công cụ hack.
+* D. Không, vì hệ thống Windows sẽ tự động lưu mật khẩu này dưới dạng văn bản rõ (Plaintext) trong file hosts.
 
 ---
 
 **Câu 9 [Vận dụng]:** Một doanh nghiệp vừa bị hacker tấn công mạng, lấy đi toàn bộ file Backup cơ sở dữ liệu người dùng chứa chuỗi mã băm mật khẩu MD5 không sử dụng cơ chế Salting. Giải pháp khẩn cấp mang tính "lá chắn cuối cùng" nào giúp doanh nghiệp bảo vệ tài khoản của khách hàng không bị thâm nhập trái phép, ngay cả khi hacker dùng Rainbow Table giải mã thành công mật khẩu của họ?
 
-A. Nâng cấp cấu hình RAM và CPU của máy chủ web lên gấp đôi.
-B. Kích hoạt bắt buộc Xác thực hai yếu tố (2FA/MFA) trên toàn hệ thống ngay lập tức.
-C. Chạy lệnh ẩn toàn bộ nút Đăng nhập trên giao diện web của doanh nghiệp đối với các dải IP lạ ngoài Việt Nam.
-D. Gửi email yêu cầu toàn bộ khách hàng đổi mật khẩu mới dài hơn 8 ký tự.
+* A. Nâng cấp cấu hình RAM và CPU của máy chủ web lên gấp đôi.
+* B. Kích hoạt bắt buộc Xác thực hai yếu tố (2FA/MFA) trên toàn hệ thống ngay lập tức.
+* C. Chạy lệnh ẩn toàn bộ nút Đăng nhập trên giao diện web của doanh nghiệp đối với các dải IP lạ ngoài Việt Nam.
+* D. Gửi email yêu cầu toàn bộ khách hàng đổi mật khẩu mới dài hơn 8 ký tự.
 
 ---
 
 **Câu 10 [Vận dụng]:** Một nhân viên IT thiết lập chính sách bảo mật cho máy chủ doanh nghiệp. Anh ta cấu hình mật khẩu tối thiểu là 14 ký tự, bắt buộc phức tạp, nhưng lại **tắt (Disable)** chính sách "Account lockout threshold". Hệ thống này đang đối mặt với nguy cơ chí mạng nào?
 
-A. Hacker có thể sử dụng kỹ thuật Sniffing để nghe lén gói tin trong mạng nội bộ.
-B. Hacker có thể đứng tại trang đăng nhập Online và treo máy chạy công cụ bẻ khóa tự động (như Hydra) liên tục ngày đêm cho đến khi dò ra mật khẩu mà không bao giờ bị hệ thống chặn đứng.
-C. Máy chủ sẽ bị xung đột phần mềm và tự động xóa file `/etc/shadow`.
-D. Người dùng không thể đăng nhập được vào hệ thống do độ dài mật khẩu quá lớn làm tràn bộ nhớ đệm.
+* A. Hacker có thể sử dụng kỹ thuật Sniffing để nghe lén gói tin trong mạng nội bộ.
+* B. Hacker có thể đứng tại trang đăng nhập Online và treo máy chạy công cụ bẻ khóa tự động (như Hydra) liên tục ngày đêm cho đến khi dò ra mật khẩu mà không bao giờ bị hệ thống chặn đứng.
+* C. Máy chủ sẽ bị xung đột phần mềm và tự động xóa file `/etc/shadow`.
+* D. Người dùng không thể đăng nhập được vào hệ thống do độ dài mật khẩu quá lớn làm tràn bộ nhớ đệm.
 
 ---
 
