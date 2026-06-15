@@ -9,6 +9,7 @@ Dưới đây là bộ quiz trắc nghiệm 10 câu được thiết kế đầy
 ### PHẦN 1: MỨC ĐỘ NHẬN BIẾT (KIỂM TRA GHI NHỚ)
 
 **Câu 1. Trong kỹ thuật Google Hacking, toán tử nào được sử dụng để giới hạn kết quả tìm kiếm duy nhất bên trong một trang web hoặc một đuôi miền cụ thể?**
+
 A. `inurl:`
 
 B. `site:`
@@ -18,6 +19,7 @@ C. `intitle:`
 D. `filetype:`
 
 **Câu 2. Cơ sở dữ liệu chứa hàng ngàn câu lệnh mẫu (Dork) được thiết kế sẵn để săn lùng lỗ hổng cấu hình sai trên Internet có tên gọi là gì?**
+
 A. OWASP Top 10
 
 B. Exploit Database
@@ -27,6 +29,7 @@ C. GHDB (Google Hacking Database)
 D. NVD (National Vulnerability Database)
 
 **Câu 3. Công cụ trực tuyến Wayback Machine (archive.org) được các chuyên gia bảo mật sử dụng chủ yếu vào mục đích gì trong giai đoạn trinh sát bị động?**
+
 A. Tấn công từ chối dịch vụ vào máy chủ web cũ
 
 B. Xem lại lịch sử và các bản chụp trạng thái của trang web trong quá khứ
@@ -36,6 +39,7 @@ C. Giải mã mật khẩu của các file cấu hình được tải xuống
 D. Quét lỗ hổng bảo mật thời gian thực trên mã nguồn hiện tại
 
 **Câu 4. Cú pháp nào sau đây bắt buộc Google lọc ra các trang có tiêu đề hiển thị chính xác chứa cụm từ "Index of"?**
+
 A. `inurl:index of`
 
 B. `site:"index of"`
@@ -49,6 +53,7 @@ D. `intitle:"index of"`
 ### PHẦN 2: MỨC ĐỘ THÔNG HIỂU (KIỂM TRA BẢN CHẤT)
 
 **Câu 5. Tại sao Google Hacking/Dorking lại được phân loại vào nhóm kỹ thuật "Trinh sát bị động" (Passive Footprinting)?**
+
 A. Vì hacker phải dùng các công cụ tự động dò quét mạnh như Nmap để thu thập dữ liệu
 
 B. Vì mọi yêu cầu truy vấn đều gửi tới máy chủ của Google, hệ thống của nạn nhân hoàn toàn không biết và không thể ghi vết IP của hacker
@@ -58,6 +63,7 @@ C. Vì kỹ thuật này chỉ áp dụng được đối với các website đ�
 D. Vì kỹ thuật này đòi hỏi sự cho phép và cấp quyền bằng văn bản thỏa thuận từ chủ quản hệ thống
 
 **Câu 6. Khi thực hiện lệnh dork bảo mật phức tạp với tần suất liên tục trên trình duyệt, người học thường đối mặt với hiện tượng gì và nguyên nhân do đâu?**
+
 A. Website mục tiêu bị sập do lệnh dork gửi quá nhiều gói tin độc hại
 
 B. Máy tính người học bị nhiễm mã độc do Google tự động đẩy tệp tin về
@@ -67,6 +73,7 @@ C. Bị Google bắt giải mã Captcha liên tục do hệ thống nghi ngờ h
 D. Đường truyền Internet bị mất kết nối hoàn toàn do nhà mạng (ISP) chặn cổng
 
 **Câu 7. Bản chất của file cấu hình hệ thống `robots.txt` đối với các cỗ máy tìm kiếm như Google là gì?**
+
 A. Là một bức tường lửa mạnh mẽ có khả năng ngăn chặn hoàn toàn mọi cuộc tấn công khai thác của hacker
 
 B. Là một bộ quy tắc mang tính "khuyến nghị" hướng dẫn các bot tìm kiếm biết khu vực nào được hoặc không được phép thu thập dữ liệu (index)
@@ -80,6 +87,7 @@ D. Là file mã nguồn điều hướng người dùng từ trang quản trị 
 ### PHẦN 3: MỨC ĐỘ VẬN DỤNG (KIỂM TRA TÌNH HUỐNG THỰC TẾ)
 
 **Câu 8. Bạn được giao nhiệm vụ rà soát nội bộ website cơ quan có tên miền `company.com` để tìm xem có tệp tin sao lưu cơ sở dữ liệu (`.sql` hoặc `.bak`) nào vô tình bị hiển thị công khai trên Internet hay không. Chuỗi lệnh nào sau đây thực hiện chính xác và tối ưu nhất yêu cầu trên?**
+
 A. `company.com filetype:sql OR filetype:bak`
 
 B. `site:company.com (filetype:sql OR filetype:bak)`
@@ -89,6 +97,7 @@ C. `intitle:company.com inurl:sql OR inurl:bak`
 D. `site:company.com filetype:sql AND filetype:bak`
 
 **Câu 9. Là một quản trị viên mạng, bạn phát hiện ra một file cấu hình chứa thông tin tài khoản admin cũ của công ty từng bị lộ công khai vào năm 2022. Hiện tại file đó đã được xóa hoàn toàn trên máy chủ web trực tuyến. Hành động nào sau đây là an toàn và đúng đắn nhất để phòng ngừa rủi ro trinh sát từ Wayback Machine?**
+
 A. Không cần làm gì vì file đã được xóa trên website hiện tại, hacker không thể tải về được nữa
 
 B. Liên hệ với tổ chức archive.org yêu cầu xóa bỏ lịch sử snapshot của website để đảm bảo an toàn
@@ -98,6 +107,7 @@ C. Đổi ngay lập tức toàn bộ mật khẩu hệ thống có liên quan �
 D. Viết lệnh chặn truy cập đối với tất cả người dùng sử dụng trình duyệt cũ
 
 **Câu 10. Trong một buổi đánh giá an ninh mạng cho một trường đại học (`university.edu.vn`), một chuyên gia mũ trắng muốn kiểm tra xem hệ thống có bị lỗi cấu hình "Directory Listing" (lộ danh mục thư mục gốc trần trụi) hay không. Cú pháp nào dưới đây phản ánh đúng tư duy này?**
+
 A. `site:university.edu.vn inurl:login`
 
 B. `site:university.edu.vn filetype:pdf "danh sách"`
